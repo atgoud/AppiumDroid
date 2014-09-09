@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Invalid_Password"
+           tests="6"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="193.849">
+  <properties />
+            <testcase name="invalid_password" time="11.508" classname="com.linkedin.cases.CreateNewAccount">
+                <failure type="org.openqa.selenium.remote.SessionNotFoundException"
+                  message="Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:03'
+System info: host: 'Rahul_P', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_55'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:147)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+  org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+  org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+  org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$0(AjaxElementLocator.java:1)
+  org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:140)
+  org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:48)
+  org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:70)
+  org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+  com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
+  com.linkedin.pages.indexpages.CreateNewAccount_IndexPage.verify_password(CreateNewAccount_IndexPage.java:430)
+  com.linkedin.cases.CreateNewAccount.invalid_password(CreateNewAccount.java:184)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+  org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+  java.util.concurrent.FutureTask.run(Unknown Source)
+  java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+  java.util.concurrent.FutureTask.run(Unknown Source)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+  java.lang.Thread.run(Unknown Source)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="invalid_password" time="40.516" classname="com.linkedin.cases.CreateNewAccount" />
+                <testcase name="invalid_password" time="38.428" classname="com.linkedin.cases.CreateNewAccount" />
+                <testcase name="invalid_password" time="30.710" classname="com.linkedin.cases.CreateNewAccount" />
+                <testcase name="invalid_password" time="40.435" classname="com.linkedin.cases.CreateNewAccount" />
+                <testcase name="invalid_password" time="32.252" classname="com.linkedin.cases.CreateNewAccount" />
+      
+</testsuite>

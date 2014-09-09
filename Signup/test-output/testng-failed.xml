@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="10" name="Failed suite [suite]" parallel="tests">
+  <parameter name="selenium.url" value="http://www.linkedin.com"/>
+  <parameter name="selenium.browser" value="firefox"/>
+  <parameter name="selenium.port" value="4444"/>
+  <parameter name="selenium.host" value="localhost"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="FirstName_FirstSpace(failed)" parallel="tests">
+    <classes>
+      <class name="com.linkedin.cases.CreateNewAccount">
+        <methods>
+          <include name="invalidFirstname" invocation-numbers="3 2"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.linkedin.cases.CreateNewAccount -->
+    </classes>
+  </test> <!-- FirstName_FirstSpace(failed) -->
+  <test name="LastName_FirstSpace(failed)" parallel="tests">
+    <classes>
+      <class name="com.linkedin.cases.CreateNewAccount">
+        <methods>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="invalidLastName"/>
+        </methods>
+      </class> <!-- com.linkedin.cases.CreateNewAccount -->
+    </classes>
+  </test> <!-- LastName_FirstSpace(failed) -->
+  <test name="Invalid_Password(failed)" parallel="tests">
+    <classes>
+      <class name="com.linkedin.cases.CreateNewAccount">
+        <methods>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="invalid_password" invocation-numbers="5"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.linkedin.cases.CreateNewAccount -->
+    </classes>
+  </test> <!-- Invalid_Password(failed) -->
+  <test name="Invalid_Emailid(failed)" parallel="tests">
+    <classes>
+      <class name="com.linkedin.cases.CreateNewAccount">
+        <methods>
+          <include name="invalid_emailid" invocation-numbers="1"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.linkedin.cases.CreateNewAccount -->
+    </classes>
+  </test> <!-- Invalid_Emailid(failed) -->
+  <test name="FirstName_SpecChar(failed)" parallel="tests">
+    <classes>
+      <class name="com.linkedin.cases.CreateNewAccount">
+        <methods>
+          <include name="verify_validation_msg"/>
+          <include name="tab_functionality"/>
+          <include name="invalidFirstname" invocation-numbers="3 0"/>
+          <include name="verify_joinnow_button"/>
+          <include name="verify_register_page"/>
+          <include name="invalid_emailid"/>
+          <include name="textbox_edit"/>
+          <include name="onclick_functionality"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="invalid_password"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="privacypolicy_link"/>
+          <include name="useragreement_link"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="register_success"/>
+          <include name="verify_labels_onpage"/>
+          <include name="verify_mendatory_fields"/>
+          <include name="invalidLastName"/>
+        </methods>
+      </class> <!-- com.linkedin.cases.CreateNewAccount -->
+    </classes>
+  </test> <!-- FirstName_SpecChar(failed) -->
+  <test name="Create_New_Account(failed)" parallel="tests">
+    <classes>
+      <class name="com.linkedin.cases.CreateNewAccount">
+        <methods>
+          <include name="invalidFirstname" invocation-numbers="1"/>
+          <include name="invalid_emailid" invocation-numbers="4 1"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="fetchSuiteConfiguration"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.linkedin.cases.CreateNewAccount -->
+    </classes>
+  </test> <!-- Create_New_Account(failed) -->
+</suite> <!-- Failed suite [suite] -->

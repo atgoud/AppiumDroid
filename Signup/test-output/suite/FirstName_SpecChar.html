@@ -1,0 +1,1126 @@
+<html>
+<head>
+<title>TestNG:  FirstName_SpecChar</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>FirstName_SpecChar</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/2/36</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Sep 05 18:22:41 IST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>1893 seconds (1893399 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: public void com.linkedin.cases.CreateNewAccount.invalidLastName(java.lang.String,int)</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: The FirefoxDriver cannot be used after quit() was called.
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.7.0_40&apos;
+Driver info: driver.version: RemoteWebDriver
+Command duration or timeout: 481 milliseconds
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=532caf62-dee0-4e4d-88d2-6f38d84a9ba8, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:829)
+	at com.linkedin.init.SeleniumInit.setUp(SeleniumInit.java:265)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.SessionNotFoundException: The FirefoxDriver cannot be used after quit() was called.
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.7.0_40&apos;
+Driver info: driver.version: RemoteWebDriver
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:829)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWindow.maximize(EventFiringWebDriver.java:630)
+	at org.openqa.selenium.remote.server.handler.MaximizeWindow.call(MaximizeWindow.java:30)
+	at org.openqa.selenium.remote.server.handler.MaximizeWindow.call(MaximizeWindow.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:169)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+</pre></div><a href='#' onClick='toggleBox("stack-trace11083225", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace11083225'><pre>org.openqa.selenium.WebDriverException: The FirefoxDriver cannot be used after quit() was called.
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.7.0_40&apos;
+Driver info: driver.version: RemoteWebDriver
+Command duration or timeout: 481 milliseconds
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=532caf62-dee0-4e4d-88d2-6f38d84a9ba8, version=31.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:829)
+	at com.linkedin.init.SeleniumInit.setUp(SeleniumInit.java:265)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.SessionNotFoundException: The FirefoxDriver cannot be used after quit() was called.
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.7.0_40&apos;
+Driver info: driver.version: RemoteWebDriver
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:829)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWindow.maximize(EventFiringWebDriver.java:630)
+	at org.openqa.selenium.remote.server.handler.MaximizeWindow.call(MaximizeWindow.java:30)
+	at org.openqa.selenium.remote.server.handler.MaximizeWindow.call(MaximizeWindow.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:169)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+</pre></div></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalidFirstname()'><b>invalidFirstname</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: Rah Ul, 10<br/>
+<a href="#Output-30831420" onClick='toggleBox("Output-30831420", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30831420" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30831420">
+<h4><strong><em>----- TESTCASE_10 : To verify that First Name field should have only characters. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:147)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:313)
+	at com.linkedin.pages.CreateNewAccount_Verification.openURL(CreateNewAccount_Verification.java:46)
+	at com.linkedin.cases.CreateNewAccount.invalidFirstname(CreateNewAccount.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div><a href='#' onClick='toggleBox("stack-trace30831420", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace30831420'><pre>org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:147)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:313)
+	at com.linkedin.pages.CreateNewAccount_Verification.openURL(CreateNewAccount_Verification.java:46)
+	at com.linkedin.cases.CreateNewAccount.invalidFirstname(CreateNewAccount.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>3</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalidFirstname()'><b>invalidFirstname</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: , 7<br/>
+<a href="#Output-1990575" onClick='toggleBox("Output-1990575", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1990575" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1990575">
+<h4><strong><em>----- TESTCASE_7 : To verify that First Name field should have only characters. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:147)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:313)
+	at com.linkedin.pages.CreateNewAccount_Verification.openURL(CreateNewAccount_Verification.java:46)
+	at com.linkedin.cases.CreateNewAccount.invalidFirstname(CreateNewAccount.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1990575", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1990575'><pre>org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:147)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:313)
+	at com.linkedin.pages.CreateNewAccount_Verification.openURL(CreateNewAccount_Verification.java:46)
+	at com.linkedin.cases.CreateNewAccount.invalidFirstname(CreateNewAccount.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>3</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.click_joinnow_button()'><b>click_joinnow_button</b><br>Test class: com.linkedin.cases.CreateNewAccount<br/>
+<a href="#Output-10531455" onClick='toggleBox("Output-10531455", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10531455" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10531455">
+<h4><strong><em>----- TESTCASE_005 :To verify that "Join Now" button is clickable -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Click on "Join Now " button on registration page  </h3><br><br/>
+ Button click successfully <p style=color:green><strong><em>PASSED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.cookiepolicy_link()'><b>cookiepolicy_link</b><br>Test class: com.linkedin.cases.CreateNewAccount<br/>
+<a href="#Output-29008059" onClick='toggleBox("Output-29008059", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29008059" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29008059">
+<h4><strong><em>----- TESTCASE_45 : To verify that Cookie Policy link is working properly -----</em></strong></h4><br/>
+<h3> Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3> Step 2 : Click on " Cookie Policy " Link </h3><br><br/>
+<font color=#FF0000>--Failed</font><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalidFirstname()'><b>invalidFirstname</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters:  Rahul, 8<br/>
+<a href="#Output-3206688" onClick='toggleBox("Output-3206688", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3206688" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3206688">
+<h4><strong><em>----- TESTCASE_8 : To verify that First Name field should have only characters. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em> Rahul<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name:<strong><em> ydsuh<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>ocnnnlq@mailinator.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>slgezfjzi<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User can't see any validation message <p style=color:red><strong><em>FAILED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalidFirstname()'><b>invalidFirstname</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: R@hu!_, 9<br/>
+<a href="#Output-29841313" onClick='toggleBox("Output-29841313", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29841313" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29841313">
+<h4><strong><em>----- TESTCASE_9 : To verify that First Name field should have only characters. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>R@hu!_<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name:<strong><em> oxloi<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>ppzedyp@mailinator.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>xquyljusd<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User can't see any validation message <p style=color:red><strong><em>FAILED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalidLastName()'><b>invalidLastName</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: , 11<br/>
+<a href="#Output-17172215" onClick='toggleBox("Output-17172215", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-17172215" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17172215">
+<h4><strong><em>----- TESTCASE_11 : To verify that Last Name field should have only characters. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>xktpc<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em><br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>arzincu@mailinator.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>epuaomalm<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User see validation message <p style=color:green><strong><em>PASSED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalidLastName()'><b>invalidLastName</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: R@hu!_, 13<br/>
+<a href="#Output-9601738" onClick='toggleBox("Output-9601738", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9601738" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9601738">
+<h4><strong><em>----- TESTCASE_13 : To verify that Last Name field should have only characters. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>fpckq<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>R@hu!_<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>zzvxibo@mailinator.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>hsnsywazv<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User can't see any validation message <p style=color:red><strong><em>FAILED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalidLastName()'><b>invalidLastName</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: Rah Ul, 14<br/>
+<a href="#Output-742190" onClick='toggleBox("Output-742190", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-742190" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-742190">
+<h4><strong><em>----- TESTCASE_14 : To verify that Last Name field should have only characters. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>ncqwv<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>Rah Ul<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>cncbzkx@mailinator.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>ghifmbdxc<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User can't see any validation message <p style=color:red><strong><em>FAILED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalidLastName()'><b>invalidLastName</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters:  Rahul, 12<br/>
+<a href="#Output-7938306" onClick='toggleBox("Output-7938306", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-7938306" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7938306">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya00@@mailinator.com, 20<br/>
+<a href="#Output-4793710" onClick='toggleBox("Output-4793710", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4793710" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4793710">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: @mailinator.com, 19<br/>
+<a href="#Output-21846074" onClick='toggleBox("Output-21846074", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-21846074" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21846074">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul pandya@mailinator.com, 17<br/>
+<a href="#Output-1747762" onClick='toggleBox("Output-1747762", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1747762" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1747762">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandyamailinator.com, 18<br/>
+<a href="#Output-16477758" onClick='toggleBox("Output-16477758", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16477758" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16477758">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pndya@, 16<br/>
+<a href="#Output-21705623" onClick='toggleBox("Output-21705623", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-21705623" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21705623">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya00@mailinator., 25<br/>
+<a href="#Output-15962065" onClick='toggleBox("Output-15962065", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15962065" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15962065">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: #$%^%^&%#^&*@mailinator.com, 23<br/>
+<a href="#Output-4685963" onClick='toggleBox("Output-4685963", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4685963" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4685963">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters:  rahul.pandya@mailinator.com, 15<br/>
+<a href="#Output-25023877" onClick='toggleBox("Output-25023877", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25023877" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25023877">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul..pandya@mailinator.com, 21<br/>
+<a href="#Output-10008923" onClick='toggleBox("Output-10008923", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10008923" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10008923">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: Rahul Pandya <rahul.pandya@mailinator.com>, 24<br/>
+<a href="#Output-12740688" onClick='toggleBox("Output-12740688", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12740688" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12740688">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@-mailinator.com, 22<br/>
+<a href="#Output-12849885" onClick='toggleBox("Output-12849885", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12849885" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12849885">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@web.net, 26<br/>
+<a href="#Output-20750271" onClick='toggleBox("Output-20750271", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20750271" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20750271">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@mailinatorhotmail.com, 29<br/>
+<a href="#Output-23442148" onClick='toggleBox("Output-23442148", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-23442148" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-23442148">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@111.com, 27<br/>
+<a href="#Output-29905200" onClick='toggleBox("Output-29905200", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29905200" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29905200">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: pandya.rahul00@gmail.com, 32<br/>
+<a href="#Output-23702493" onClick='toggleBox("Output-23702493", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-23702493" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-23702493">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@mailinator.com (Rahul Pandya), 28<br/>
+<a href="#Output-21495200" onClick='toggleBox("Output-21495200", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-21495200" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21495200">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: , 31<br/>
+<a href="#Output-30739577" onClick='toggleBox("Output-30739577", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30739577" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30739577">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@xyz.com, 30<br/>
+<a href="#Output-4592512" onClick='toggleBox("Output-4592512", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4592512" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4592512">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_password()'><b>invalid_password</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: emailid, 35<br/>
+<a href="#Output-18107012" onClick='toggleBox("Output-18107012", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18107012" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18107012">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_password()'><b>invalid_password</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: ra12@, 37<br/>
+<a href="#Output-33306327" onClick='toggleBox("Output-33306327", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-33306327" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-33306327">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_password()'><b>invalid_password</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: Jammmiieee, 33<br/>
+<a href="#Output-838015" onClick='toggleBox("Output-838015", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-838015" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-838015">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_password()'><b>invalid_password</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: , 36<br/>
+<a href="#Output-14567842" onClick='toggleBox("Output-14567842", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-14567842" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-14567842">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_password()'><b>invalid_password</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: 123456, 34<br/>
+<a href="#Output-2422688" onClick='toggleBox("Output-2422688", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2422688" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2422688">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_password()'><b>invalid_password</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahulpa12, 38<br/>
+<a href="#Output-16201639" onClick='toggleBox("Output-16201639", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-16201639" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-16201639">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.onclick_functionality()'><b>onclick_functionality</b><br>Test class: com.linkedin.cases.CreateNewAccount<br/>
+<a href="#Output-2362852" onClick='toggleBox("Output-2362852", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2362852" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2362852">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.privacypolicy_link()'><b>privacypolicy_link</b><br>Test class: com.linkedin.cases.CreateNewAccount<br/>
+<a href="#Output-30071147" onClick='toggleBox("Output-30071147", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30071147" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30071147">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.register_success()'><b>register_success</b><br>Test class: com.linkedin.cases.CreateNewAccount<br/>
+<a href="#Output-14997067" onClick='toggleBox("Output-14997067", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-14997067" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-14997067">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.tab_functionality()'><b>tab_functionality</b><br>Test class: com.linkedin.cases.CreateNewAccount<br/>
+<a href="#Output-19680331" onClick='toggleBox("Output-19680331", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19680331" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19680331">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.textbox_edit()'><b>textbox_edit</b><br>Test class: com.linkedin.cases.CreateNewAccount<br/>
+<a href="#Output-31804726" onClick='toggleBox("Output-31804726", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31804726" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31804726">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.useragreement_link()'><b>useragreement_link</b><br>Test class: com.linkedin.cases.CreateNewAccount<br/>
+<a href="#Output-32310138" onClick='toggleBox("Output-32310138", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-32310138" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-32310138">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.verify_joinnow_button()'><b>verify_joinnow_button</b><br>Test class: com.linkedin.cases.CreateNewAccount<br/>
+<a href="#Output-27899335" onClick='toggleBox("Output-27899335", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27899335" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27899335">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.verify_labels_onpage()'><b>verify_labels_onpage</b><br>Test class: com.linkedin.cases.CreateNewAccount<br/>
+<a href="#Output-6249030" onClick='toggleBox("Output-6249030", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6249030" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6249030">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.verify_mendatory_fields()'><b>verify_mendatory_fields</b><br>Test class: com.linkedin.cases.CreateNewAccount<br/>
+<a href="#Output-17511341" onClick='toggleBox("Output-17511341", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-17511341" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17511341">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.verify_register_page()'><b>verify_register_page</b><br>Test class: com.linkedin.cases.CreateNewAccount<br/>
+<a href="#Output-12622994" onClick='toggleBox("Output-12622994", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12622994" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12622994">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.verify_validation_msg()'><b>verify_validation_msg</b><br>Test class: com.linkedin.cases.CreateNewAccount<br/>
+<a href="#Output-6377277" onClick='toggleBox("Output-6377277", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6377277" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6377277">
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.linkedin.cases.CreateNewAccount@1be469</td></tr>
+</table><p>
+</body>
+</html>

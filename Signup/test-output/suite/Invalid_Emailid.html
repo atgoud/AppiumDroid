@@ -1,0 +1,617 @@
+<html>
+<head>
+<title>TestNG:  Invalid_Emailid</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Invalid_Emailid</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Sep 05 18:23:29 IST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>1122 seconds (1122422 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pndya@, 16<br/>
+<a href="#Output-4900924" onClick='toggleBox("Output-4900924", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4900924" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4900924">
+<h4><strong><em>----- TESTCASE_16 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>ydxvg<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+<br> <b>Please look to the screenshot - </b><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:147)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$0(AjaxElementLocator.java:1)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:140)
+	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:48)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
+	at com.linkedin.pages.indexpages.CreateNewAccount_IndexPage.verify_emailid(CreateNewAccount_IndexPage.java:361)
+	at com.linkedin.cases.CreateNewAccount.invalid_emailid(CreateNewAccount.java:168)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div><a href='#' onClick='toggleBox("stack-trace4900924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace4900924'><pre>org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:147)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$0(AjaxElementLocator.java:1)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:140)
+	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:48)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
+	at com.linkedin.pages.indexpages.CreateNewAccount_IndexPage.verify_emailid(CreateNewAccount_IndexPage.java:361)
+	at com.linkedin.cases.CreateNewAccount.invalid_emailid(CreateNewAccount.java:168)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>7</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: #$%^%^&%#^&*@mailinator.com, 23<br/>
+<a href="#Output-15342281" onClick='toggleBox("Output-15342281", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15342281" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15342281">
+<h4><strong><em>----- TESTCASE_23 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>wpvgp<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>cwhpi<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>#$%^%^&%#^&*@mailinator.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>xutewwjbf<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User see validation message <p style=color:green><strong><em>PASSED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya00@@mailinator.com, 20<br/>
+<a href="#Output-32958758" onClick='toggleBox("Output-32958758", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-32958758" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-32958758">
+<h4><strong><em>----- TESTCASE_20 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>ogekh<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>eyjqp<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>rahul.pandya00@@mailinator.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>cbxuyucea<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User can't see any validation message <p style=color:red><strong><em>FAILED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandyamailinator.com, 18<br/>
+<a href="#Output-13568350" onClick='toggleBox("Output-13568350", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13568350" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13568350">
+<h4><strong><em>----- TESTCASE_18 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>qmqbd<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>nctmz<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>rahul.pandyamailinator.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>ruczdkdte<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User see validation message <p style=color:green><strong><em>PASSED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul pandya@mailinator.com, 17<br/>
+<a href="#Output-29078392" onClick='toggleBox("Output-29078392", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29078392" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29078392">
+<h4><strong><em>----- TESTCASE_17 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>jpxcy<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>omucv<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>rahul pandya@mailinator.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>kkehevruh<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User see validation message <p style=color:green><strong><em>PASSED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@-mailinator.com, 22<br/>
+<a href="#Output-27878043" onClick='toggleBox("Output-27878043", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27878043" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27878043">
+<h4><strong><em>----- TESTCASE_22 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>kzpmz<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>oxmsg<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>rahul.pandya@-mailinator.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>gxtinsapz<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User can't see any validation message <p style=color:red><strong><em>FAILED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: Rahul Pandya <rahul.pandya@mailinator.com>, 24<br/>
+<a href="#Output-29184147" onClick='toggleBox("Output-29184147", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29184147" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29184147">
+<h4><strong><em>----- TESTCASE_24 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>oykii<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>xkbzf<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>Rahul Pandya <rahul.pandya@mailinator.com><br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>frrymferr<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User see validation message <p style=color:green><strong><em>PASSED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul..pandya@mailinator.com, 21<br/>
+<a href="#Output-692983" onClick='toggleBox("Output-692983", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-692983" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-692983">
+<h4><strong><em>----- TESTCASE_21 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>kzhej<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>ygguk<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>rahul..pandya@mailinator.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>hkkxebelm<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User can't see any validation message <p style=color:red><strong><em>FAILED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters:  rahul.pandya@mailinator.com, 15<br/>
+<a href="#Output-12495564" onClick='toggleBox("Output-12495564", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12495564" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12495564">
+<h4><strong><em>----- TESTCASE_15 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>fcgbe<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>aoqgv<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em> rahul.pandya@mailinator.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>apxeooxdf<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User see validation message <p style=color:green><strong><em>PASSED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: @mailinator.com, 19<br/>
+<a href="#Output-31806677" onClick='toggleBox("Output-31806677", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31806677" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31806677">
+<h4><strong><em>----- TESTCASE_19 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>agctu<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>hsuyf<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>@mailinator.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>xioakenrq<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User see validation message <p style=color:green><strong><em>PASSED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya00@mailinator., 25<br/>
+<a href="#Output-4486245" onClick='toggleBox("Output-4486245", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4486245" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4486245">
+<h4><strong><em>----- TESTCASE_25 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>sbpkf<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>tpwjm<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>rahul.pandya00@mailinator.<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>ribasffze<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User see validation message <p style=color:green><strong><em>PASSED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@web.net, 26<br/>
+<a href="#Output-25018689" onClick='toggleBox("Output-25018689", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25018689" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25018689">
+<h4><strong><em>----- TESTCASE_26 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>qgljo<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>fzhft<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>rahul.pandya@web.net<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>gcebeqypm<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User can't see any validation message <p style=color:red><strong><em>FAILED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@111.com, 27<br/>
+<a href="#Output-18234083" onClick='toggleBox("Output-18234083", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18234083" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18234083">
+<h4><strong><em>----- TESTCASE_27 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>ymwpu<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>iadze<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>rahul.pandya@111.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>lxfokztuo<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User can't see any validation message <p style=color:red><strong><em>FAILED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@mailinator.com (Rahul Pandya), 28<br/>
+<a href="#Output-12853789" onClick='toggleBox("Output-12853789", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12853789" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12853789">
+<h4><strong><em>----- TESTCASE_28 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>ioisr<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>mlsru<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>rahul.pandya@mailinator.com (Rahul Pandya)<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>xhmjaigpy<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User see validation message <p style=color:green><strong><em>PASSED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@mailinatorhotmail.com, 29<br/>
+<a href="#Output-15902204" onClick='toggleBox("Output-15902204", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-15902204" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15902204">
+<h4><strong><em>----- TESTCASE_29 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>vdguv<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>xanqh<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>rahul.pandya@mailinatorhotmail.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>vcokzbjxd<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User can't see any validation message <p style=color:red><strong><em>FAILED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@xyz.com, 30<br/>
+<a href="#Output-13900917" onClick='toggleBox("Output-13900917", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13900917" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13900917">
+<h4><strong><em>----- TESTCASE_30 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>kjxzz<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>amhfp<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>rahul.pandya@xyz.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>oyavlzjng<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User can't see any validation message <p style=color:red><strong><em>FAILED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: , 31<br/>
+<a href="#Output-1338383" onClick='toggleBox("Output-1338383", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1338383" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1338383">
+<h4><strong><em>----- TESTCASE_31 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>hlaye<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>aasot<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em><br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>ghlutwuuw<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User see validation message <p style=color:green><strong><em>PASSED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+<tr>
+<td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: pandya.rahul00@gmail.com, 32<br/>
+<a href="#Output-11376429" onClick='toggleBox("Output-11376429", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11376429" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11376429">
+<h4><strong><em>----- TESTCASE_32 : To verify that user is enter valid emailid. -----</em></strong></h4><br/>
+<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br><br/>
+Opening URL <br><br/>
+Page open succesfully<br/>
+<h3>  Step 2 : Enter First Name  </h3><br><br/>
+Enter First Name: <strong><em>iztrm<br/>
+<h3>  Step 3 : Enter Last Name  </h3><br><br/>
+Enter Last Name: <strong><em>vrjzl<br/>
+<h3>  Step 4 : Enter Emailid  </h3><br><br/>
+Enter emailid: <strong><em>pandya.rahul00@gmail.com<br/>
+<h3>  Step 5 : Enter Password  </h3><br><br/>
+Enter Password: <strong><em>tgawkenyl<br/>
+<h3>  Step 6 : Click "Join Now" button  </h3><br><br/>
+ User can't see any validation message <p style=color:red><strong><em>FAILED</p></h3><br/>
+Case successfully PASSED <hr><br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
+</table><p>
+</body>
+</html>
