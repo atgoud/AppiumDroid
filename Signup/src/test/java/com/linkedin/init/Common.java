@@ -1,9 +1,5 @@
 package com.linkedin.init;
 
-
-
-
-
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.io.File;
@@ -17,7 +13,6 @@ import java.util.SimpleTimeZone;
 import java.util.TimeZone;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;

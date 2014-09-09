@@ -21,7 +21,6 @@ public class CreateNewAccount extends com.linkedin.init.SeleniumInit  {
 		
 		CreateNewAccount_IndexPage.openUrl();
 		
-		
 		mycommon.log_testover();
 		
 	}
@@ -119,20 +118,7 @@ public class CreateNewAccount extends com.linkedin.init.SeleniumInit  {
 		
 	}
 	
-	
-	
-//	@Test
-//	public void invalidFirstname_specchar(){
-//		
-//		mycommon.log("  TESTCASE_008 : To verify that First Name field is not have Special characters or Numbers.  ");
-//		
-//		mycommon.log(" Step 1 : Open URL (http://www.linkedin.com) ");
-//		
-//		CreateNewAccount_Verification.openURL();
-//		
-//		CreateNewAccount_IndexPage.verify_firstname(currentTest);
-//	}
-	
+
 	@Test(dataProvider= "invalidlnames" ,dataProviderClass = CreateNewAccount_IndexPage.class)
 	public void invalidLastName(String name,int cases){
 		

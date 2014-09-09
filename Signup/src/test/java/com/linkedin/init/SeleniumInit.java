@@ -1,7 +1,6 @@
 package com.linkedin.init;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.File;import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.URL;
 import java.util.logging.Logger;
@@ -264,11 +263,11 @@ public class SeleniumInit implements ILoggerStatus {
 
 		// driver = new ChromeDriver(capability);
 
-		System.out.println("browser");
+		//System.out.println("browser");
 
 		driver.get(testUrl);
 		driver.manage().window().maximize();
-		System.out.println("Start");
+		//System.out.println("Start");
 
 		// CreateNewAccount = new CreateNewAccount(driver);
 		CreateNewAccount_IndexPage = new CreateNewAccount_IndexPage(driver);

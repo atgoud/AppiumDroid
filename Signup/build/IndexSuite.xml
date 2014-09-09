@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="suite" verbose="10" parallel="false">
+<suite name="suite" verbose="1" parallel="false">
 	
 	<!-- Put IP of localhost/Grid Hub machine -->
 	<parameter name="selenium.host" value="localhost" />
-
-	
 	
 	<!-- Put Port of localhost RC/Grid Hub machine -->
 	<parameter name="selenium.port" value="4444" />
-	
-
 
 	<parameter name="selenium.browser" value="firefox" /> 
-
 	<parameter name="selenium.url" value="http://www.linkedin.com" />
 	
 	
@@ -33,8 +28,7 @@
 		</classes>
 	</test>
 	
-	<test name="Verify_Register_Page">
-	    
+	<test name="Verify_Register_Page">    
 		<classes>
 			<class
 				name="com.linkedin.cases.CreateNewAccount">
@@ -47,8 +41,7 @@
 	
 		
 	<test name="Verify_Label_onPage">
-	 
-		<classes>
+	 	<classes>
 			<class
 				name="com.linkedin.cases.CreateNewAccount">
 				<methods>
@@ -192,7 +185,6 @@
 		</test> 
 		
 		<test name="Verify_Validation_Msg">
-		    
 			<classes>
 				<class
 					name="com.linkedin.cases.CreateNewAccount">
@@ -204,8 +196,7 @@
 		</test>
 		
 		<test name="User_Agreement_Link">
-		   
-			<classes>
+		 	<classes>
 				<class
 					name="com.linkedin.cases.CreateNewAccount">
 					<methods>
@@ -216,7 +207,6 @@
 		</test>
 		
 		<test name="Privacy_Policy_Link">
-		   
 			<classes>
 				<class
 					name="com.linkedin.cases.CreateNewAccount">
@@ -227,8 +217,7 @@
 			</classes>
 		</test>
 		
-		<test name="Cookie_Policy_Link">
-		   
+		<test name="Cookie_Policy_Link">   
 			<classes>
 				<class
 					name="com.linkedin.cases.CreateNewAccount">
