@@ -162,7 +162,7 @@ public class SeleniumInit implements ILoggerStatus {
 				.getAbsolutePath();
 
 		DesiredCapabilities capability = null;
-		//DesiredCapabilities caps = null;
+		DesiredCapabilities caps = null;
 		if (targetBrowser == null || targetBrowser.contains("firefox")) {
 
 			FirefoxProfile profile = new FirefoxProfile();
@@ -189,13 +189,13 @@ public class SeleniumInit implements ILoggerStatus {
 			 * "1.8.4"); // Avoid startup screen
 			 */
 
-			capability = DesiredCapabilities.firefox();
-			capability.setJavascriptEnabled(true);
-			capability.setCapability(FirefoxDriver.PROFILE, profile);
+//			capability = DesiredCapabilities.firefox();
+//			capability.setJavascriptEnabled(true);
+//			capability.setCapability(FirefoxDriver.PROFILE, profile);
 			
-//			caps = DesiredCapabilities.firefox();
-//			caps.setCapability("platform", "Windows 8.1");
-//			caps.setCapability("version", "31");
+			caps = DesiredCapabilities.firefox();
+			caps.setCapability("platform", "Windows 8.1");
+			caps.setCapability("version", "31");
 
 			System.out.println("===========firefox browser===========");
 		} else if (targetBrowser.contains("ie8")) {
@@ -256,8 +256,10 @@ public class SeleniumInit implements ILoggerStatus {
 		
 	//	"http://rahul_0502:19e76ba8-d434-4d72-9bc7-823598cf6869@ondemand.saucelabs.com:80/wd/hub"
 			
-			//driver = new RemoteWebDriver(remote_grid, capability);
-			driver = new RemoteWebDriver(remote_grid,capability);
+		driver = new RemoteWebDriver(
+                new URL("http://rahul_0502:19e76ba8-d434-4d72-9bc7-823598cf6869@ondemand.saucelabs.com:80/wd/hub"),
+                caps);
+			//driver = new RemoteWebDriver(remote_grid,capability);
 		
 		
 
