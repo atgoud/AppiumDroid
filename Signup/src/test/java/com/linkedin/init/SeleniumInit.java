@@ -253,7 +253,10 @@ public class SeleniumInit implements ILoggerStatus {
 			
 		}else{
 			
-			driver = new RemoteWebDriver(remote_grid, capability);
+			//driver = new RemoteWebDriver(remote_grid, capability);
+			driver = new RemoteWebDriver(
+	                new URL("http://rahul_0502:19e76ba8-d434-4d72-9bc7-823598cf6869@ondemand.saucelabs.com:80/wd/hub"),
+	                capability);
 		}
 		
 
