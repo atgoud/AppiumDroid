@@ -11,10 +11,6 @@ public class CreateNewAccount extends com.linkedin.init.SeleniumInit  {
 	
 	Common common = new com.linkedin.init.Common(driver);
 	com.linkedin.init.MyCommon mycommon = new MyCommon();
-	
-	
-	
-	
 
 	@Test
 	public void verify_register_page(){

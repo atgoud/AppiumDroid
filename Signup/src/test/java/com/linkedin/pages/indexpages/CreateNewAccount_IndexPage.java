@@ -22,7 +22,7 @@ public class CreateNewAccount_IndexPage extends AbstractPage{
 		// TODO Auto-generated constructor stub
 	}
 	
-	@DataProvider(name = "invalidnames" ,parallel=true)
+	@DataProvider(name = "invalidnames")
 	public static Object[][] invalidnames(){
 		
 		return new Object[][] {
@@ -30,7 +30,7 @@ public class CreateNewAccount_IndexPage extends AbstractPage{
 		};
 	}
 	
-	@DataProvider(name = "invalidlnames" ,parallel=true)
+	@DataProvider(name = "invalidlnames")
 	public static Object[][] invalidlnames(){
 		
 		return new Object[][] {
@@ -38,7 +38,7 @@ public class CreateNewAccount_IndexPage extends AbstractPage{
 		};
 	}
 	
-	@DataProvider(name = "invalidmailid" ,parallel=true)
+	@DataProvider(name = "invalidmailid")
 	public static Object[][] invalidmailid(){
 		
 		return new Object[][] {
@@ -66,7 +66,7 @@ public class CreateNewAccount_IndexPage extends AbstractPage{
 		};
 	}
 	
-	@DataProvider(name = "invalidpassword" ,parallel=true)
+	@DataProvider(name = "invalidpassword")
 	public static Object[][] invalidpassword(){
 		
 		return new Object[][] {

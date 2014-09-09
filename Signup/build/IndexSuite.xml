@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="suite" verbose="10" parallel="false">
-	<!-- <listeners> <listener class-name="org.uncommons.reportng.HTMLReporter"/> 
-		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/> </listeners> -->
+	
 	<!-- Put IP of localhost/Grid Hub machine -->
 	<parameter name="selenium.host" value="localhost" />
 
@@ -13,7 +12,7 @@
 
 
 	<parameter name="selenium.browser" value="firefox" /> 
-<!-- 	<parameter name="selenium.browser" value="chrome" /> -->
+
 	<parameter name="selenium.url" value="http://www.linkedin.com" />
 	
 	
@@ -239,9 +238,5 @@
 				</class>
 			</classes>
 		</test>
-
-
-
-
 
 </suite>

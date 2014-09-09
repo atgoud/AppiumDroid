@@ -1,6 +1,5 @@
 package com.linkedin.pages;
 
-import org.apache.bcel.generic.ILOAD;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
