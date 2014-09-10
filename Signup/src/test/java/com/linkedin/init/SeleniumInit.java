@@ -250,7 +250,50 @@ public class SeleniumInit implements ILoggerStatus {
 			// //capability.setCapability(SafariDriver.CLEAN_SESSION_CAPABILITY,
 			// profile);
 			this.driver = new SafariDriver(capability);
-		}
+		}else if (targetBrowser.contains("saucelab")) {
+			   
+			   
+			   FirefoxProfile profile = new FirefoxProfile();
+
+			   //Proxy proxy = new Proxy();
+			   //proxy.setNoProxy("ipms.ppadb.co.bw");
+
+			   profile.setPreference("dom.max_chrome_script_run_time", "999");
+			   profile.setPreference("dom.max_script_run_time", "999");
+			   profile.setPreference("browser.download.folderList", 2);
+			   profile.setPreference("browser.download.useDownloadDir", true);
+			   profile.setPreference("browser.download.manager.showWhenStarting",false);
+			   profile.setEnableNativeEvents(true);
+			   profile.setPreference("network.http.use-cache", false);
+			   //profile.setEnableNativeEvents(true);
+			   
+			/*
+			   profile.setProxyPreferences(proxy);
+			   
+			   
+			   
+			   
+			*/
+			  /* 
+			      File file = new File("C:/Users/Viral/Downloads/firebug-1.8.4.xpi");
+			     
+			      profile.addExtension(file);
+			      profile.setPreference("extensions.firebug.currentVersion", "1.8.4"); // Avoid startup screen
+			   */
+			   
+			   capability = DesiredCapabilities.firefox();
+			   capability.setJavascriptEnabled(true);
+			   capability.setCapability(FirefoxDriver.PROFILE, profile);
+			   
+			   
+			   
+			   
+			   
+			   //capability = DesiredCapabilities.firefox();
+			   capability.setCapability("platform", "Windows 8");
+			   capability.setCapability("version", "31");
+			   
+			  }
 		
 	
 		
