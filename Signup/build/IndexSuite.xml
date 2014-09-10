@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="suite" verbose="1" parallel="false">
 	
-<!-- 	<!-- Put IP of localhost/Grid Hub machine --> 
+	<!-- Put IP of localhost/Grid Hub machine -->
 <!-- 	<parameter name="selenium.host" value="localhost" /> -->
 	
-<!-- 	<!-- Put Port of localhost RC/Grid Hub machine --> 
+	<!-- Put Port of localhost RC/Grid Hub machine -->
 <!-- 	<parameter name="selenium.port" value="4444" /> -->
 
 <!-- 	<parameter name="selenium.browser" value="firefox" />  -->
@@ -15,7 +15,7 @@
  	<parameter name="selenium.port" value="80" /> 
 
   <parameter name="selenium.browser" value="saucelab" />
- <parameter name="selenium.url" value="http://www.linkedin.com" />
+ <parameter name="selenium.url" value="www.linkedin.com" />
 	
 	
 	<listeners>
