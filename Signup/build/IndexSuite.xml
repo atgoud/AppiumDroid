@@ -99,7 +99,7 @@
 		</classes>
 	</test>
 	
-	<test name="FirstName_FirstSpace">
+	<test name="Invalid_FirstName">
 		<classes>
 			<class
 				name="com.linkedin.cases.CreateNewAccount">
@@ -110,19 +110,7 @@
 		</classes>
 	</test>
 	
-	<test name="FirstName_SpecChar">
-		<classes>
-			<class
-				name="com.linkedin.cases.CreateNewAccount">
-				<methods>
-					<include name="invalidFirstname_specchar" />
-				</methods>
-			</class>
-		</classes>
-	</test>
-
-
-		<test name="LastName_FirstSpace">
+	<test name="Invalid_LastName">
 			<classes>
 				<class
 					name="com.linkedin.cases.CreateNewAccount">
@@ -131,7 +119,7 @@
 					</methods>
 				</class>
 			</classes>
-		</test>
+	</test>
 		
 		<test name="Invalid_Emailid">
 			<classes>
