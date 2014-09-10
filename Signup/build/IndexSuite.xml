@@ -15,7 +15,7 @@
  	<parameter name="selenium.port" value="80" /> 
 
   <parameter name="selenium.browser" value="saucelab" />
- <parameter name="selenium.url" value="www.linkedin.com" />
+ <parameter name="selenium.url" value="http://www.linkedin.com" />
 	
 	
 	<listeners>
