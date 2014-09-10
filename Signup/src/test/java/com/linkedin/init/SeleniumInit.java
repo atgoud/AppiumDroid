@@ -162,7 +162,7 @@ public class SeleniumInit implements ILoggerStatus {
 				.getAbsolutePath();
 
 		DesiredCapabilities capability = null;
-		DesiredCapabilities caps = null;
+		DesiredCapabilities capabillities = null;
 		if (targetBrowser == null || targetBrowser.contains("firefox")) {
 
 			FirefoxProfile profile = new FirefoxProfile();
@@ -189,13 +189,13 @@ public class SeleniumInit implements ILoggerStatus {
 			 * "1.8.4"); // Avoid startup screen
 			 */
 
-//			capability = DesiredCapabilities.firefox();
-//			capability.setJavascriptEnabled(true);
-//			capability.setCapability(FirefoxDriver.PROFILE, profile);
+			capability = DesiredCapabilities.firefox();
+			capability.setJavascriptEnabled(true);
+			capability.setCapability(FirefoxDriver.PROFILE, profile);
 			
-			caps = DesiredCapabilities.firefox();
-			caps.setCapability("platform", "Windows 8.1");
-			caps.setCapability("version", "31");
+			
+			
+			
 
 			System.out.println("===========firefox browser===========");
 		} else if (targetBrowser.contains("ie8")) {
@@ -252,7 +252,7 @@ public class SeleniumInit implements ILoggerStatus {
 			this.driver = new SafariDriver(capability);
 		}else if (targetBrowser.contains("saucelab")) {
 			   
-			   
+			   System.out.println("hi");
 			   FirefoxProfile profile = new FirefoxProfile();
 
 			   //Proxy proxy = new Proxy();
@@ -281,18 +281,12 @@ public class SeleniumInit implements ILoggerStatus {
 			      profile.setPreference("extensions.firebug.currentVersion", "1.8.4"); // Avoid startup screen
 			   */
 			   
-			   capability = DesiredCapabilities.firefox();
-			   capability.setJavascriptEnabled(true);
-			   capability.setCapability(FirefoxDriver.PROFILE, profile);
-			   
-			   
-			   
-			   
-			   
-			   //capability = DesiredCapabilities.firefox();
-			 //  capability.setCapability("platform", "Windows 8");
-			 //  capability.setCapability("version", "31");
-			   
+
+
+		        capabillities = DesiredCapabilities.firefox();
+		        capabillities.setCapability("version", "31");
+		        capabillities.setCapability("platform", Platform.WIN8);
+		        
 			  }
 		
 	
@@ -300,8 +294,8 @@ public class SeleniumInit implements ILoggerStatus {
 	//	"http://rahul_0502:19e76ba8-d434-4d72-9bc7-823598cf6869@ondemand.saucelabs.com:80/wd/hub"
 			
 		driver = new RemoteWebDriver(
-                new URL("http://rahul_0502:19e76ba8-d434-4d72-9bc7-823598cf6869@ondemand.saucelabs.com"),
-                caps);
+                new URL("http://rahul_0502:9639b07a-02f3-43cb-821a-d340d05f9fa2@ondemand.saucelabs.com:80/wd/hub"),
+                capabillities);
 			//driver = new RemoteWebDriver(remote_grid,capability);
 		
 		

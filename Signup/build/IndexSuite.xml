@@ -10,7 +10,7 @@
 <!-- 	<parameter name="selenium.browser" value="firefox" />  -->
 <!-- 	<parameter name="selenium.url" value="http://www.linkedin.com" /> -->
 	
-	   <parameter name="selenium.host" value="rahul_0502:19e76ba8-d434-4d72-9bc7-823598cf6869@ondemand.saucelabs.com" />
+	   <parameter name="selenium.host" value="rahul_0502:9639b07a-02f3-43cb-821a-d340d05f9fa2@ondemand.saucelabs.com" />
 
  	<parameter name="selenium.port" value="80" /> 
 
@@ -18,10 +18,7 @@
  <parameter name="selenium.url" value="http://www.linkedin.com" />
 
 	
-	<listeners>
-  <listener class-name="org.uncommons.reportng.HTMLReporter" />
-  <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
-	</listeners>
+
 
  
 	<test name="Create_New_Account">
