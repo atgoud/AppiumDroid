@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/18</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 09 21:30:42 IST 2014</td>
+<td>Started on:</td><td>Wed Sep 10 14:00:58 IST 2014</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (73 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (70 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,45 +76,25 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.setUp()'><b>setUp</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: public void com.linkedin.cases.CreateNewAccount.invalid_emailid(java.lang.String,int)</td>
-<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
-System info: host: &apos;Rahul_P&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+<td><div><pre>java.lang.NullPointerException: null value in entry: desiredCapabilities=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+	at com.google.common.collect.ImmutableMap.entryOf(ImmutableMap.java:135)
+	at com.google.common.collect.ImmutableMap$Builder.put(ImmutableMap.java:206)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:234)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
-	at com.linkedin.init.SeleniumInit.setUp(SeleniumInit.java:261)
-Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
-	at java.net.InetAddress.getAllByName0(Unknown Source)
-	at java.net.InetAddress.getAllByName(Unknown Source)
-	at java.net.InetAddress.getAllByName(Unknown Source)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:204)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:173)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-	... 29 more
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15656433", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace15656433'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
-System info: host: &apos;Rahul_P&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at com.linkedin.init.SeleniumInit.setUp(SeleniumInit.java:304)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16565866", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16565866'><pre>java.lang.NullPointerException: null value in entry: desiredCapabilities=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+	at com.google.common.collect.ImmutableMap.entryOf(ImmutableMap.java:135)
+	at com.google.common.collect.ImmutableMap$Builder.put(ImmutableMap.java:206)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:234)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
-	at com.linkedin.init.SeleniumInit.setUp(SeleniumInit.java:261)
-	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at com.linkedin.init.SeleniumInit.setUp(SeleniumInit.java:304)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
@@ -139,25 +119,6 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
-	at java.net.InetAddress.getAllByName0(Unknown Source)
-	at java.net.InetAddress.getAllByName(Unknown Source)
-	at java.net.InetAddress.getAllByName(Unknown Source)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
-	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
-	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
-	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:204)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:173)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-	... 29 more
 </pre></div></td>
 <td>0</td>
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
@@ -264,10 +225,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 </tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters:  rahul.pandya@mailinator.com, 15<br/>
-<a href="#Output-21594592" onClick='toggleBox("Output-21594592", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1657840" onClick='toggleBox("Output-1657840", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-21594592" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-21594592">
+<a href="#Output-1657840" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1657840">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -276,10 +237,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pndya@, 16<br/>
-<a href="#Output-25865226" onClick='toggleBox("Output-25865226", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-14540460" onClick='toggleBox("Output-14540460", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-25865226" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-25865226">
+<a href="#Output-14540460" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-14540460">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -288,10 +249,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul pandya@mailinator.com, 17<br/>
-<a href="#Output-9464281" onClick='toggleBox("Output-9464281", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-6220734" onClick='toggleBox("Output-6220734", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-9464281" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-9464281">
+<a href="#Output-6220734" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6220734">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -300,10 +261,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandyamailinator.com, 18<br/>
-<a href="#Output-7306220" onClick='toggleBox("Output-7306220", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-27455443" onClick='toggleBox("Output-27455443", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-7306220" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-7306220">
+<a href="#Output-27455443" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27455443">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -312,10 +273,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: @mailinator.com, 19<br/>
-<a href="#Output-23964999" onClick='toggleBox("Output-23964999", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-305379" onClick='toggleBox("Output-305379", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-23964999" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-23964999">
+<a href="#Output-305379" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-305379">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -324,10 +285,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya00@@mailinator.com, 20<br/>
-<a href="#Output-4486245" onClick='toggleBox("Output-4486245", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-7327063" onClick='toggleBox("Output-7327063", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-4486245" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-4486245">
+<a href="#Output-7327063" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-7327063">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -336,10 +297,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul..pandya@mailinator.com, 21<br/>
-<a href="#Output-24375103" onClick='toggleBox("Output-24375103", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-6162001" onClick='toggleBox("Output-6162001", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-24375103" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-24375103">
+<a href="#Output-6162001" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6162001">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -348,10 +309,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@-mailinator.com, 22<br/>
-<a href="#Output-1617550" onClick='toggleBox("Output-1617550", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-9969323" onClick='toggleBox("Output-9969323", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1617550" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1617550">
+<a href="#Output-9969323" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9969323">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -360,10 +321,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: #$%^%^&%#^&*@mailinator.com, 23<br/>
-<a href="#Output-18532482" onClick='toggleBox("Output-18532482", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-5861567" onClick='toggleBox("Output-5861567", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-18532482" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-18532482">
+<a href="#Output-5861567" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5861567">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -372,10 +333,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: Rahul Pandya <rahul.pandya@mailinator.com>, 24<br/>
-<a href="#Output-3324424" onClick='toggleBox("Output-3324424", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-5265019" onClick='toggleBox("Output-5265019", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-3324424" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-3324424">
+<a href="#Output-5265019" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5265019">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -384,10 +345,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya00@mailinator., 25<br/>
-<a href="#Output-25510389" onClick='toggleBox("Output-25510389", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-9056803" onClick='toggleBox("Output-9056803", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-25510389" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-25510389">
+<a href="#Output-9056803" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9056803">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -396,10 +357,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@web.net, 26<br/>
-<a href="#Output-1140075" onClick='toggleBox("Output-1140075", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-446414" onClick='toggleBox("Output-446414", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1140075" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1140075">
+<a href="#Output-446414" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-446414">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -408,10 +369,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@111.com, 27<br/>
-<a href="#Output-20609926" onClick='toggleBox("Output-20609926", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-9448075" onClick='toggleBox("Output-9448075", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-20609926" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-20609926">
+<a href="#Output-9448075" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9448075">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -420,10 +381,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@mailinator.com (Rahul Pandya), 28<br/>
-<a href="#Output-15274277" onClick='toggleBox("Output-15274277", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-24029854" onClick='toggleBox("Output-24029854", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-15274277" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-15274277">
+<a href="#Output-24029854" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24029854">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -432,10 +393,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@mailinatorhotmail.com, 29<br/>
-<a href="#Output-29503079" onClick='toggleBox("Output-29503079", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1506443" onClick='toggleBox("Output-1506443", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-29503079" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-29503079">
+<a href="#Output-1506443" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1506443">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -444,10 +405,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: rahul.pandya@xyz.com, 30<br/>
-<a href="#Output-30466632" onClick='toggleBox("Output-30466632", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-21066981" onClick='toggleBox("Output-21066981", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-30466632" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-30466632">
+<a href="#Output-21066981" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21066981">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -456,10 +417,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: , 31<br/>
-<a href="#Output-18640987" onClick='toggleBox("Output-18640987", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-26451219" onClick='toggleBox("Output-26451219", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-18640987" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-18640987">
+<a href="#Output-26451219" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26451219">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>
@@ -468,10 +429,10 @@ Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
 <td>com.linkedin.cases.CreateNewAccount@e03a4d</td></tr>
 <tr>
 <td title='com.linkedin.cases.CreateNewAccount.invalid_emailid()'><b>invalid_emailid</b><br>Test class: com.linkedin.cases.CreateNewAccount<br>Parameters: pandya.rahul00@gmail.com, 32<br/>
-<a href="#Output-33513453" onClick='toggleBox("Output-33513453", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-32963135" onClick='toggleBox("Output-32963135", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-33513453" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-33513453">
+<a href="#Output-32963135" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-32963135">
 <br> <b>Please look to the screenshot - </b><br/>
 </div>
 </td>

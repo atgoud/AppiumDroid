@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [suite]">
   <parameter name="selenium.url" value="http://www.linkedin.com"/>
-  <parameter name="selenium.browser" value="firefox"/>
-  <parameter name="selenium.port" value="4444"/>
-  <parameter name="selenium.host" value="localhost"/>
+  <parameter name="selenium.browser" value="saucelab"/>
+  <parameter name="selenium.port" value="80"/>
+  <parameter name="selenium.host" value="rahul_0502:19e76ba8-d434-4d72-9bc7-823598cf6869@ondemand.saucelabs.com"/>
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
@@ -14,9 +14,13 @@
       <class name="com.linkedin.cases.CreateNewAccount">
         <methods>
           <include name="verify_validation_msg"/>
+          <include name="tab_functionality"/>
           <include name="verify_joinnow_button"/>
+          <include name="invalidFirstname"/>
           <include name="verify_register_page"/>
+          <include name="invalid_emailid"/>
           <include name="textbox_edit"/>
+          <include name="onclick_functionality"/>
           <include name="fetchSuiteConfiguration"/>
           <include name="fetchSuiteConfiguration"/>
           <include name="fetchSuiteConfiguration"/>
@@ -36,6 +40,7 @@
           <include name="fetchSuiteConfiguration"/>
           <include name="fetchSuiteConfiguration"/>
           <include name="fetchSuiteConfiguration"/>
+          <include name="invalid_password"/>
           <include name="setUp"/>
           <include name="setUp"/>
           <include name="setUp"/>
@@ -55,7 +60,9 @@
           <include name="setUp"/>
           <include name="setUp"/>
           <include name="setUp"/>
+          <include name="privacypolicy_link"/>
           <include name="useragreement_link"/>
+          <include name="cookiepolicy_link"/>
           <include name="tearDown"/>
           <include name="tearDown"/>
           <include name="tearDown"/>
@@ -75,8 +82,11 @@
           <include name="tearDown"/>
           <include name="tearDown"/>
           <include name="tearDown"/>
+          <include name="register_success"/>
           <include name="verify_labels_onpage"/>
+          <include name="click_joinnow_button"/>
           <include name="verify_mendatory_fields"/>
+          <include name="invalidLastName"/>
         </methods>
       </class> <!-- com.linkedin.cases.CreateNewAccount -->
     </classes>

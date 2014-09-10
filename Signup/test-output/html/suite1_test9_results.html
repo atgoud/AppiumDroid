@@ -12,7 +12,7 @@
 <body>
 <h1>FirstName_SpecChar</h1>
 <p>
-  Test duration: 0.139s
+  Test duration: 0.047s
 </p>
 
   <table class="resultsTable configTable">
@@ -34,17 +34,17 @@
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.<br/>
-Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;<br/>
-System info: host: &apos;Rahul_P&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;<br/>
-Driver info: driver.version: RemoteWebDriver</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException: null value in entry: desiredCapabilities=null</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)<br />
+              com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)<br />
+              com.google.common.collect.ImmutableMap.entryOf(ImmutableMap.java:135)<br />
+              com.google.common.collect.ImmutableMap$Builder.put(ImmutableMap.java:206)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:234)<br />
               org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)<br />
               org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)<br />
-              com.linkedin.init.SeleniumInit.setUp(SeleniumInit.java:261)<br />
-              sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)<br />
+              com.linkedin.init.SeleniumInit.setUp(SeleniumInit.java:304)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
               java.lang.reflect.Method.invoke(Unknown Source)<br />
               org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
@@ -69,56 +69,7 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
               org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
               org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
               org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.net.UnknownHostException: ondemand.saucelabs.com</a><br />
-        <div class="stackTrace" id="exception-1">
-                      java.net.InetAddress.getAllByName0(Unknown Source)<br />
-                      java.net.InetAddress.getAllByName(Unknown Source)<br />
-                      java.net.InetAddress.getAllByName(Unknown Source)<br />
-                      org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)<br />
-                      org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)<br />
-                      org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)<br />
-                      org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)<br />
-                      org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)<br />
-                      org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)<br />
-                      org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)<br />
-                      org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)<br />
-                      org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)<br />
-                      org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)<br />
-                      org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)<br />
-                      org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:204)<br />
-                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:173)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)<br />
-                      com.linkedin.init.SeleniumInit.setUp(SeleniumInit.java:261)<br />
-                      sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)<br />
-                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
-                      java.lang.reflect.Method.invoke(Unknown Source)<br />
-                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
-                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
-                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
-                      org.testng.internal.Invoker.invokeMethod(Invoker.java:653)<br />
-                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
-                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
-                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
-                      org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
-                      org.testng.TestRunner.run(TestRunner.java:617)<br />
-                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
-                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
-                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
-                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
-                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
-                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
-                      org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
-                      org.testng.TestNG.run(TestNG.java:1057)<br />
-                      org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
-                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
-                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
-                  </div>
-          </div>
+                </div>
       </td>
 </tr>
     
@@ -759,7 +710,7 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   click_joinnow_button
       </td>
   <td class="duration">
-    0.000s
+    0.001s
   </td>
   <td class="result">
                                
@@ -776,10 +727,64 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   cookiepolicy_link
       </td>
   <td class="duration">
+    0.001s
+  </td>
+  <td class="result">
+                               
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalidFirstname
+      </td>
+  <td class="duration">
     0.000s
   </td>
   <td class="result">
                                
+          <i>Method arguments: </i><span class="arguments">"", 7</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalidFirstname
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"Rah Ul", 10</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalidFirstname
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"R@hu!_", 9</span><br />
     
             <div class="testOutput">
                         &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
@@ -808,50 +813,14 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  invalidFirstname
+                  invalidLastName
       </td>
   <td class="duration">
-    0.001s
+    0.000s
   </td>
   <td class="result">
                                
-          <i>Method arguments: </i><span class="arguments">"R@hu!_", 9</span><br />
-    
-            <div class="testOutput">
-                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalidFirstname
-      </td>
-  <td class="duration">
-    0.001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"Rah Ul", 10</span><br />
-    
-            <div class="testOutput">
-                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalidFirstname
-      </td>
-  <td class="duration">
-    0.001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"", 7</span><br />
+          <i>Method arguments: </i><span class="arguments">"Rah Ul", 14</span><br />
     
             <div class="testOutput">
                         &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
@@ -883,25 +852,7 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   invalidLastName
       </td>
   <td class="duration">
-    0.001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">" Rahul", 12</span><br />
-    
-            <div class="testOutput">
-                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalidLastName
-      </td>
-  <td class="duration">
-    0.001s
+    0.000s
   </td>
   <td class="result">
                                
@@ -919,137 +870,11 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   invalidLastName
       </td>
   <td class="duration">
-    0.001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"Rah Ul", 14</span><br />
-    
-            <div class="testOutput">
-                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    0.001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"pandya.rahul00@gmail.com", 32</span><br />
-    
-            <div class="testOutput">
-                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    0.001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"rahul.pandya00@@mailinator.com", 20</span><br />
-    
-            <div class="testOutput">
-                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
     0.000s
   </td>
   <td class="result">
                                
-          <i>Method arguments: </i><span class="arguments">"rahul pandya@mailinator.com", 17</span><br />
-    
-            <div class="testOutput">
-                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    0.001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"rahul.pandya@xyz.com", 30</span><br />
-    
-            <div class="testOutput">
-                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"rahul.pandya@-mailinator.com", 22</span><br />
-    
-            <div class="testOutput">
-                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"#$%^%^&%#^&*@mailinator.com", 23</span><br />
-    
-            <div class="testOutput">
-                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    0.001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"rahul.pandya@mailinator.com (Rahul Pandya)", 28</span><br />
+          <i>Method arguments: </i><span class="arguments">" Rahul", 12</span><br />
     
             <div class="testOutput">
                         &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
@@ -1085,7 +910,7 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
   </td>
   <td class="result">
                                
-          <i>Method arguments: </i><span class="arguments">"rahul.pandya00@mailinator.", 25</span><br />
+          <i>Method arguments: </i><span class="arguments">"#$%^%^&%#^&*@mailinator.com", 23</span><br />
     
             <div class="testOutput">
                         &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
@@ -1100,6 +925,150 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
       </td>
   <td class="duration">
     0.001s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul.pandya@111.com", 27</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.001s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul.pandya00@mailinator.", 25</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul.pandya@mailinatorhotmail.com", 29</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul.pandya@mailinator.com (Rahul Pandya)", 28</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.001s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul.pandya00@@mailinator.com", 20</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.001s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul.pandyamailinator.com", 18</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul.pandya@xyz.com", 30</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.001s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul.pndya@", 16</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.000s
   </td>
   <td class="result">
                                
@@ -1135,29 +1104,11 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   invalid_emailid
       </td>
   <td class="duration">
-    0.005s
+    0.000s
   </td>
   <td class="result">
                                
-          <i>Method arguments: </i><span class="arguments">"rahul.pndya@", 16</span><br />
-    
-            <div class="testOutput">
-                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    0.001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"rahul.pandya@mailinatorhotmail.com", 29</span><br />
+          <i>Method arguments: </i><span class="arguments">"rahul pandya@mailinator.com", 17</span><br />
     
             <div class="testOutput">
                         &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
@@ -1175,7 +1126,25 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
   </td>
   <td class="result">
                                
-          <i>Method arguments: </i><span class="arguments">"rahul.pandyamailinator.com", 18</span><br />
+          <i>Method arguments: </i><span class="arguments">"pandya.rahul00@gmail.com", 32</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul.pandya@-mailinator.com", 22</span><br />
     
             <div class="testOutput">
                         &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
@@ -1193,7 +1162,25 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
   </td>
   <td class="result">
                                
-          <i>Method arguments: </i><span class="arguments">"rahul.pandya@111.com", 27</span><br />
+          <i>Method arguments: </i><span class="arguments">"rahul..pandya@mailinator.com", 21</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.009s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"@mailinator.com", 19</span><br />
     
             <div class="testOutput">
                         &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
@@ -1222,32 +1209,14 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
 </tr>
 <tr>
   <td class="method">
-                  invalid_emailid
+                  invalid_password
       </td>
   <td class="duration">
     0.000s
   </td>
   <td class="result">
                                
-          <i>Method arguments: </i><span class="arguments">"@mailinator.com", 19</span><br />
-    
-            <div class="testOutput">
-                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    0.015s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"rahul..pandya@mailinator.com", 21</span><br />
+          <i>Method arguments: </i><span class="arguments">"Jammmiieee", 33</span><br />
     
             <div class="testOutput">
                         &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
@@ -1262,64 +1231,28 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
       </td>
   <td class="duration">
     0.000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"emailid", 35</span><br />
-    
-            <div class="testOutput">
-                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_password
-      </td>
-  <td class="duration">
-    0.000s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"123456", 34</span><br />
-    
-            <div class="testOutput">
-                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_password
-      </td>
-  <td class="duration">
-    0.001s
-  </td>
-  <td class="result">
-                               
-          <i>Method arguments: </i><span class="arguments">"", 36</span><br />
-    
-            <div class="testOutput">
-                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_password
-      </td>
-  <td class="duration">
-    0.001s
   </td>
   <td class="result">
                                
           <i>Method arguments: </i><span class="arguments">"rahulpa12", 38</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_password
+      </td>
+  <td class="duration">
+    0.001s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"123456", 34</span><br />
     
             <div class="testOutput">
                         &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
@@ -1355,7 +1288,25 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
   </td>
   <td class="result">
                                
-          <i>Method arguments: </i><span class="arguments">"Jammmiieee", 33</span><br />
+          <i>Method arguments: </i><span class="arguments">"emailid", 35</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_password
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"", 36</span><br />
     
             <div class="testOutput">
                         &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
@@ -1369,7 +1320,7 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   onclick_functionality
       </td>
   <td class="duration">
-    0.001s
+    0.000s
   </td>
   <td class="result">
                                
@@ -1386,7 +1337,7 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   privacypolicy_link
       </td>
   <td class="duration">
-    0.001s
+    0.000s
   </td>
   <td class="result">
                                
@@ -1420,7 +1371,7 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   tab_functionality
       </td>
   <td class="duration">
-    0.001s
+    0.000s
   </td>
   <td class="result">
                                
@@ -1471,7 +1422,7 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   verify_joinnow_button
       </td>
   <td class="duration">
-    0.001s
+    0.000s
   </td>
   <td class="result">
                                
@@ -1505,7 +1456,7 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   verify_mendatory_fields
       </td>
   <td class="duration">
-    0.004s
+    0.000s
   </td>
   <td class="result">
                                
@@ -1522,7 +1473,7 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   verify_register_page
       </td>
   <td class="duration">
-    0.000s
+    0.001s
   </td>
   <td class="result">
                                
@@ -1539,7 +1490,7 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   verify_validation_msg
       </td>
   <td class="duration">
-    0.001s
+    0.000s
   </td>
   <td class="result">
                                
