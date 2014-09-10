@@ -3,60 +3,257 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - Register_Success</title>
+  <title>Test Results Report - LastName_FirstSpace</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>Register_Success</h1>
+<h1>LastName_FirstSpace</h1>
 <p>
-  Test duration: 727.591s
+  Test duration: 0.006s
 </p>
 
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">com.linkedin.cases.CreateNewAccount</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.linkedin.cases.CreateNewAccount.invalidLastName(java.lang.String,int)</span><br />
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.<br/>
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;<br/>
+System info: host: &apos;Rahul_P&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)<br />
+              com.linkedin.init.SeleniumInit.setUp(SeleniumInit.java:261)<br />
+              sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:653)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.net.UnknownHostException: ondemand.saucelabs.com</a><br />
+        <div class="stackTrace" id="exception-1">
+                      java.net.InetAddress.getAllByName0(Unknown Source)<br />
+                      java.net.InetAddress.getAllByName(Unknown Source)<br />
+                      java.net.InetAddress.getAllByName(Unknown Source)<br />
+                      org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)<br />
+                      org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)<br />
+                      org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)<br />
+                      org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)<br />
+                      org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)<br />
+                      org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)<br />
+                      org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)<br />
+                      org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)<br />
+                      org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)<br />
+                      org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)<br />
+                      org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:204)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:173)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)<br />
+                      com.linkedin.init.SeleniumInit.setUp(SeleniumInit.java:261)<br />
+                      sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:653)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+                      org.testng.TestRunner.run(TestRunner.java:617)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+                      org.testng.TestNG.run(TestNG.java:1057)<br />
+                      org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+    
+          <tr><td colspan="3">&nbsp;</td></tr>
+      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
+                    <tr>
+          <td colspan="3" class="group">com.linkedin.cases.CreateNewAccount</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+            </table>
 
 
 
-
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
           <tr>
         <td colspan="3" class="group">com.linkedin.cases.CreateNewAccount</td>
       </tr>
             
 <tr>
   <td class="method">
-                  register_success
+                  invalidLastName
       </td>
   <td class="duration">
-    39.865s
+    0.000s
   </td>
   <td class="result">
-        
+                               
+          <i>Method arguments: </i><span class="arguments">"R@hu!_", 13</span><br />
     
             <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_39 : To verify that user is see register successful page after enter valid data -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;dqzmx<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;mexaf<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;uasuzoy@mailinator.com<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;mxrjlvfni<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 Error! User failed to register &lt;p style=color:red&gt;&lt;strong&gt;&lt;em&gt;FAILED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalidLastName
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">" Rahul", 12</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalidLastName
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"", 11</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalidLastName
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"Rah Ul", 14</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
                   </div>
     
 
       </td>
 </tr>
       </table>
+
   
 </body>
 </html>

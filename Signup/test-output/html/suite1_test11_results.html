@@ -12,83 +12,366 @@
 <body>
 <h1>Invalid_Emailid</h1>
 <p>
-  Test duration: 9128.117s
+  Test duration: 0.038s
 </p>
 
-
-
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">com.linkedin.cases.CreateNewAccount</td>
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">com.linkedin.cases.CreateNewAccount</td>
       </tr>
             
 <tr>
   <td class="method">
-                  invalid_emailid
+                  setUp
       </td>
   <td class="duration">
-    7.333s
+    0.000s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">"rahul.pndya@", 16</span><br />
+          <i>Method arguments: </i><span class="arguments">public void com.linkedin.cases.CreateNewAccount.invalid_emailid(java.lang.String,int)</span><br />
     
-            <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_16 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;ydxvg<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
-                  </div>
-    
+        
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?<br/>
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.<br/>
 Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;<br/>
-System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;<br/>
+System info: host: &apos;Rahul_P&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;<br/>
 Driver info: driver.version: RemoteWebDriver</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:147)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)<br />
-              org.openqa.selenium.By$ByXPath.findElement(By.java:357)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)<br />
-              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)<br />
-              org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$0(AjaxElementLocator.java:1)<br />
-              org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:140)<br />
-              org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:48)<br />
-              org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:70)<br />
-              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)<br />
-              com.sun.proxy.$Proxy11.sendKeys(Unknown Source)<br />
-              com.linkedin.pages.indexpages.CreateNewAccount_IndexPage.verify_emailid(CreateNewAccount_IndexPage.java:361)<br />
-              com.linkedin.cases.CreateNewAccount.invalid_emailid(CreateNewAccount.java:168)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)<br />
+              com.linkedin.init.SeleniumInit.setUp(SeleniumInit.java:261)<br />
+              sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
               java.lang.reflect.Method.invoke(Unknown Source)<br />
               org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:653)<br />
               org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
-              org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)<br />
-              org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)<br />
-              java.util.concurrent.FutureTask.run(Unknown Source)<br />
-              java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)<br />
-              java.util.concurrent.FutureTask.run(Unknown Source)<br />
-              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
-              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
-              java.lang.Thread.run(Unknown Source)<br />
-                </div>
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.net.UnknownHostException: ondemand.saucelabs.com</a><br />
+        <div class="stackTrace" id="exception-1">
+                      java.net.InetAddress.getAllByName0(Unknown Source)<br />
+                      java.net.InetAddress.getAllByName(Unknown Source)<br />
+                      java.net.InetAddress.getAllByName(Unknown Source)<br />
+                      org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)<br />
+                      org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)<br />
+                      org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)<br />
+                      org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)<br />
+                      org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)<br />
+                      org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)<br />
+                      org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)<br />
+                      org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)<br />
+                      org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)<br />
+                      org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)<br />
+                      org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:204)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:173)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)<br />
+                      com.linkedin.init.SeleniumInit.setUp(SeleniumInit.java:261)<br />
+                      sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:653)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+                      org.testng.TestRunner.run(TestRunner.java:617)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+                      org.testng.TestNG.run(TestNG.java:1057)<br />
+                      org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                  </div>
+          </div>
       </td>
 </tr>
-      </table>
+    
+          <tr><td colspan="3">&nbsp;</td></tr>
+      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
+                    <tr>
+          <td colspan="3" class="group">com.linkedin.cases.CreateNewAccount</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  setUp
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+            </table>
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
           <tr>
         <td colspan="3" class="group">com.linkedin.cases.CreateNewAccount</td>
       </tr>
@@ -98,316 +381,14 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   invalid_emailid
       </td>
   <td class="duration">
-    28.583s
+    0.002s
   </td>
   <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"", 31</span><br />
-    
-            <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_31 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;hlaye<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;aasot<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;ghlutwuuw<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User see validation message &lt;p style=color:green&gt;&lt;strong&gt;&lt;em&gt;PASSED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    41.928s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"rahul.pandya@mailinatorhotmail.com", 29</span><br />
-    
-            <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_29 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;vdguv<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;xanqh<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;rahul.pandya@mailinatorhotmail.com<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;vcokzbjxd<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User can&apos;t see any validation message &lt;p style=color:red&gt;&lt;strong&gt;&lt;em&gt;FAILED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    27.966s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"rahul.pandyamailinator.com", 18</span><br />
-    
-            <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_18 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;qmqbd<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;nctmz<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;rahul.pandyamailinator.com<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;ruczdkdte<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User see validation message &lt;p style=color:green&gt;&lt;strong&gt;&lt;em&gt;PASSED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    35.296s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"@mailinator.com", 19</span><br />
-    
-            <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_19 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;agctu<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;hsuyf<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;@mailinator.com<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;xioakenrq<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User see validation message &lt;p style=color:green&gt;&lt;strong&gt;&lt;em&gt;PASSED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    37.279s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"rahul.pandya@xyz.com", 30</span><br />
-    
-            <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_30 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;kjxzz<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;amhfp<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;rahul.pandya@xyz.com<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;oyavlzjng<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User can&apos;t see any validation message &lt;p style=color:red&gt;&lt;strong&gt;&lt;em&gt;FAILED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    30.957s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"pandya.rahul00@gmail.com", 32</span><br />
-    
-            <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_32 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;iztrm<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;vrjzl<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;pandya.rahul00@gmail.com<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;tgawkenyl<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User can&apos;t see any validation message &lt;p style=color:red&gt;&lt;strong&gt;&lt;em&gt;FAILED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    39.720s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"rahul.pandya@-mailinator.com", 22</span><br />
-    
-            <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_22 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;kzpmz<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;oxmsg<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;rahul.pandya@-mailinator.com<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;gxtinsapz<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User can&apos;t see any validation message &lt;p style=color:red&gt;&lt;strong&gt;&lt;em&gt;FAILED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    28.068s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"Rahul Pandya <rahul.pandya@mailinator.com>", 24</span><br />
-    
-            <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_24 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;oykii<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;xkbzf<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;Rahul Pandya &lt;rahul.pandya@mailinator.com&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;frrymferr<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User see validation message &lt;p style=color:green&gt;&lt;strong&gt;&lt;em&gt;PASSED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    30.159s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"rahul.pandya00@@mailinator.com", 20</span><br />
-    
-            <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_20 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;ogekh<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;eyjqp<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;rahul.pandya00@@mailinator.com<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;cbxuyucea<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User can&apos;t see any validation message &lt;p style=color:red&gt;&lt;strong&gt;&lt;em&gt;FAILED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    34.844s
-  </td>
-  <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">" rahul.pandya@mailinator.com", 15</span><br />
     
             <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_15 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;fcgbe<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;aoqgv<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt; rahul.pandya@mailinator.com<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;apxeooxdf<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User see validation message &lt;p style=color:green&gt;&lt;strong&gt;&lt;em&gt;PASSED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
                   </div>
     
 
@@ -418,28 +399,14 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   invalid_emailid
       </td>
   <td class="duration">
-    28.677s
+    0.001s
   </td>
   <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"rahul pandya@mailinator.com", 17</span><br />
+                               
+          <i>Method arguments: </i><span class="arguments">"Rahul Pandya <rahul.pandya@mailinator.com>", 24</span><br />
     
             <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_17 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;jpxcy<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;omucv<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;rahul pandya@mailinator.com<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;kkehevruh<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User see validation message &lt;p style=color:green&gt;&lt;strong&gt;&lt;em&gt;PASSED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
                   </div>
     
 
@@ -450,28 +417,104 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   invalid_emailid
       </td>
   <td class="duration">
-    40.936s
+    0.001s
   </td>
   <td class="result">
-        
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul.pandya00@@mailinator.com", 20</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul.pndya@", 16</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"@mailinator.com", 19</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.002s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul.pandya@xyz.com", 30</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.001s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"", 31</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.001s
+  </td>
+  <td class="result">
+                               
           <i>Method arguments: </i><span class="arguments">"rahul.pandya@web.net", 26</span><br />
     
             <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_26 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;qgljo<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;fzhft<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;rahul.pandya@web.net<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;gcebeqypm<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User can&apos;t see any validation message &lt;p style=color:red&gt;&lt;strong&gt;&lt;em&gt;FAILED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
                   </div>
     
 
@@ -482,28 +525,32 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   invalid_emailid
       </td>
   <td class="duration">
-    27.993s
+    0.000s
   </td>
   <td class="result">
-        
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul.pandya@mailinatorhotmail.com", 29</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.001s
+  </td>
+  <td class="result">
+                               
           <i>Method arguments: </i><span class="arguments">"rahul.pandya00@mailinator.", 25</span><br />
     
             <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_25 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;sbpkf<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;tpwjm<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;rahul.pandya00@mailinator.<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;ribasffze<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User see validation message &lt;p style=color:green&gt;&lt;strong&gt;&lt;em&gt;PASSED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
                   </div>
     
 
@@ -514,60 +561,14 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   invalid_emailid
       </td>
   <td class="duration">
-    37.033s
+    0.000s
   </td>
   <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"rahul.pandya@111.com", 27</span><br />
-    
-            <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_27 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;ymwpu<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;iadze<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;rahul.pandya@111.com<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;lxfokztuo<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User can&apos;t see any validation message &lt;p style=color:red&gt;&lt;strong&gt;&lt;em&gt;FAILED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  invalid_emailid
-      </td>
-  <td class="duration">
-    28.016s
-  </td>
-  <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">"rahul.pandya@mailinator.com (Rahul Pandya)", 28</span><br />
     
             <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_28 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;ioisr<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;mlsru<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;rahul.pandya@mailinator.com (Rahul Pandya)<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;xhmjaigpy<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User see validation message &lt;p style=color:green&gt;&lt;strong&gt;&lt;em&gt;PASSED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
                   </div>
     
 
@@ -578,28 +579,14 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   invalid_emailid
       </td>
   <td class="duration">
-    29.922s
+    0.000s
   </td>
   <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"#$%^%^&%#^&*@mailinator.com", 23</span><br />
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul.pandyamailinator.com", 18</span><br />
     
             <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_23 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;wpvgp<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;cwhpi<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;#$%^%^&amp;%#^&amp;*@mailinator.com<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;xutewwjbf<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User see validation message &lt;p style=color:green&gt;&lt;strong&gt;&lt;em&gt;PASSED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
                   </div>
     
 
@@ -610,34 +597,111 @@ Driver info: driver.version: RemoteWebDriver</b></a><br />
                   invalid_emailid
       </td>
   <td class="duration">
-    40.422s
+    0.000s
   </td>
   <td class="result">
-        
+                               
           <i>Method arguments: </i><span class="arguments">"rahul..pandya@mailinator.com", 21</span><br />
     
             <div class="testOutput">
-                        &lt;h4&gt;&lt;strong&gt;&lt;em&gt;----- TESTCASE_21 : To verify that user is enter valid emailid. -----&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;<br />
-                                &lt;h3&gt;&nbsp; Step 1 : Open URL (http://www.linkedin.com)&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Opening URL &lt;br&gt;<br />
-                                Page open succesfully<br />
-                                &lt;h3&gt;&nbsp; Step 2 : Enter First Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter First Name: &lt;strong&gt;&lt;em&gt;kzhej<br />
-                                &lt;h3&gt;&nbsp; Step 3 : Enter Last Name&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Last Name: &lt;strong&gt;&lt;em&gt;ygguk<br />
-                                &lt;h3&gt;&nbsp; Step 4 : Enter Emailid&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter emailid: &lt;strong&gt;&lt;em&gt;rahul..pandya@mailinator.com<br />
-                                &lt;h3&gt;&nbsp; Step 5 : Enter Password&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                Enter Password: &lt;strong&gt;&lt;em&gt;hkkxebelm<br />
-                                &lt;h3&gt;&nbsp; Step 6 : Click &quot;Join Now&quot; button&nbsp; &lt;/h3&gt;&lt;br&gt;<br />
-                                 User can&apos;t see any validation message &lt;p style=color:red&gt;&lt;strong&gt;&lt;em&gt;FAILED&lt;/p&gt;&lt;/h3&gt;<br />
-                                Case successfully PASSED &lt;hr&gt;<br />
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul.pandya@-mailinator.com", 22</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"#$%^%^&%#^&*@mailinator.com", 23</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.001s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul pandya@mailinator.com", 17</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.001s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"rahul.pandya@111.com", 27</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  invalid_emailid
+      </td>
+  <td class="duration">
+    0.001s
+  </td>
+  <td class="result">
+                               
+          <i>Method arguments: </i><span class="arguments">"pandya.rahul00@gmail.com", 32</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt; &lt;b&gt;Please look to the screenshot - &lt;/b&gt;<br />
                   </div>
     
 
       </td>
 </tr>
       </table>
+
   
 </body>
 </html>

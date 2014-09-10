@@ -1,62 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Invalid_Password"
-           tests="6"
+           tests="12"
            failures="1"
            errors="0"
-           skipped="0"
-           time="193.849">
+           skipped="11"
+           time="0.003">
   <properties />
-            <testcase name="invalid_password" time="11.508" classname="com.linkedin.cases.CreateNewAccount">
-                <failure type="org.openqa.selenium.remote.SessionNotFoundException"
-                  message="Session ID is null. Using WebDriver after calling quit()?
+            <testcase name="setUp" time="0.000" classname="com.linkedin.cases.CreateNewAccount">
+                <failure type="org.openqa.selenium.remote.UnreachableBrowserException"
+                  message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
-System info: host: &apos;Rahul_P&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;
+System info: host: &apos;Rahul_P&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.7.0_55&apos;
 Driver info: driver.version: RemoteWebDriver"
               >
-<![CDATA[org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
+<![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:03'
-System info: host: 'Rahul_P', ip: '192.168.56.1', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_55'
+System info: host: 'Rahul_P', ip: '127.0.0.1', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_55'
 Driver info: driver.version: RemoteWebDriver
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:147)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-  org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-  org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-  org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
-  org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$0(AjaxElementLocator.java:1)
-  org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:140)
-  org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:48)
-  org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:70)
-  org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
-  com.sun.proxy.$Proxy11.sendKeys(Unknown Source)
-  com.linkedin.pages.indexpages.CreateNewAccount_IndexPage.verify_password(CreateNewAccount_IndexPage.java:430)
-  com.linkedin.cases.CreateNewAccount.invalid_password(CreateNewAccount.java:184)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:593)
+  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
+  com.linkedin.init.SeleniumInit.setUp(SeleniumInit.java:261)
+  sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
   java.lang.reflect.Method.invoke(Unknown Source)
   org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
   org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-  org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
-  org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
-  java.util.concurrent.FutureTask.run(Unknown Source)
-  java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-  java.util.concurrent.FutureTask.run(Unknown Source)
-  java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-  java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-  java.lang.Thread.run(Unknown Source)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.net.UnknownHostException: ondemand.saucelabs.com
+  java.net.InetAddress.getAllByName0(Unknown Source)
+  java.net.InetAddress.getAllByName(Unknown Source)
+  java.net.InetAddress.getAllByName(Unknown Source)
+  org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+  org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+  org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
+  org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+  org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+  org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+  org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)
+  org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+  org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+  org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+  org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+  org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:204)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:173)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
+  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
+  com.linkedin.init.SeleniumInit.setUp(SeleniumInit.java:261)
+  sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
       </failure>
 
           </testcase>
   
+            <testcase name="setUp" time="0.0" classname="com.linkedin.cases.CreateNewAccount">
+          <skipped />
+    </testcase>
+            <testcase name="setUp" time="0.0" classname="com.linkedin.cases.CreateNewAccount">
+          <skipped />
+    </testcase>
+            <testcase name="setUp" time="0.0" classname="com.linkedin.cases.CreateNewAccount">
+          <skipped />
+    </testcase>
+            <testcase name="setUp" time="0.0" classname="com.linkedin.cases.CreateNewAccount">
+          <skipped />
+    </testcase>
+            <testcase name="setUp" time="0.0" classname="com.linkedin.cases.CreateNewAccount">
+          <skipped />
+    </testcase>
+            <testcase name="invalid_password" time="0.0" classname="com.linkedin.cases.CreateNewAccount">
+          <skipped />
+    </testcase>
+            <testcase name="invalid_password" time="0.0" classname="com.linkedin.cases.CreateNewAccount">
+          <skipped />
+    </testcase>
+            <testcase name="invalid_password" time="0.0" classname="com.linkedin.cases.CreateNewAccount">
+          <skipped />
+    </testcase>
+            <testcase name="invalid_password" time="0.0" classname="com.linkedin.cases.CreateNewAccount">
+          <skipped />
+    </testcase>
+            <testcase name="invalid_password" time="0.0" classname="com.linkedin.cases.CreateNewAccount">
+          <skipped />
+    </testcase>
+            <testcase name="invalid_password" time="0.0" classname="com.linkedin.cases.CreateNewAccount">
+          <skipped />
+    </testcase>
   
-            <testcase name="invalid_password" time="40.516" classname="com.linkedin.cases.CreateNewAccount" />
-                <testcase name="invalid_password" time="38.428" classname="com.linkedin.cases.CreateNewAccount" />
-                <testcase name="invalid_password" time="30.710" classname="com.linkedin.cases.CreateNewAccount" />
-                <testcase name="invalid_password" time="40.435" classname="com.linkedin.cases.CreateNewAccount" />
-                <testcase name="invalid_password" time="32.252" classname="com.linkedin.cases.CreateNewAccount" />
-      
+  
 </testsuite>
