@@ -290,8 +290,8 @@ public class SeleniumInit implements ILoggerStatus {
 			   
 			   
 			   //capability = DesiredCapabilities.firefox();
-			   capability.setCapability("platform", "Windows 8");
-			   capability.setCapability("version", "31");
+			 //  capability.setCapability("platform", "Windows 8");
+			 //  capability.setCapability("version", "31");
 			   
 			  }
 		
@@ -300,7 +300,7 @@ public class SeleniumInit implements ILoggerStatus {
 	//	"http://rahul_0502:19e76ba8-d434-4d72-9bc7-823598cf6869@ondemand.saucelabs.com:80/wd/hub"
 			
 		driver = new RemoteWebDriver(
-                new URL("http://rahul_0502:19e76ba8-d434-4d72-9bc7-823598cf6869@ondemand.saucelabs.com:80/wd/hub"),
+                new URL("http://rahul_0502:19e76ba8-d434-4d72-9bc7-823598cf6869@ondemand.saucelabs.com"),
                 caps);
 			//driver = new RemoteWebDriver(remote_grid,capability);
 		
