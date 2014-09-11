@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import com.linkedin.init.Common;
-import com.linkedin.init.ILoggerStatus;
-import com.linkedin.init.SeleniumInit;
 import com.linkedin.init.Test_Result;
 
 public class CreateNewAccount_Verification extends AbstractPage {
@@ -325,20 +323,20 @@ public class CreateNewAccount_Verification extends AbstractPage {
 			
 			if(driver.getTitle().equals("Privacy Policy | LinkedIn")){
 				
-				//common.log(" <br>Privacy Policy link is working properly "+Test_Result.PASSED +"</h3>");
-				SeleniumInit.logStatus(ILoggerStatus.PASSED);
+				common.log(" <br>Privacy Policy link is working properly "+Test_Result.PASSED +"</h3>");
+				
 				common.pause(2);
 			}else{
 				
-				//common.log("<br> Privacy Policy link is not working properly "+Test_Result.FAILED +"</h3>");
-				SeleniumInit.logStatus(ILoggerStatus.FAILED);
+				common.log("<br> Privacy Policy link is not working properly "+Test_Result.FAILED +"</h3>");
+				
 				common.pause(2);
 			}
 			
 		}catch(Exception e){
 			
-			//common.log(" <br>  Policy Policy link is not working properly "+Test_Result.FAILED +"</h3>");
-			SeleniumInit.logStatus(ILoggerStatus.FAILED);
+				common.log(" <br>  Policy Policy link is not working properly "+Test_Result.FAILED +"</h3>");
+			
 			common.pause(2);
 			
 		}
@@ -360,20 +358,20 @@ public class CreateNewAccount_Verification extends AbstractPage {
 			
 			if(driver.getTitle().equals("Cookie Policy  LinkedIn")){
 				
-				//common.log("<br> Cookie Policy link is working properly "+Test_Result.PASSED +"</h3>");
-				SeleniumInit.logStatus(ILoggerStatus.PASSED);
+				common.log("<br> Cookie Policy link is working properly "+Test_Result.PASSED +"</h3>");
+				
 				common.pause(2);
 			}else{
 				
-				//common.log("<br> Cookie Policy link is not working properly "+Test_Result.FAILED +"</h3>");
-				SeleniumInit.logStatus(ILoggerStatus.FAILED);
+				common.log("<br> Cookie Policy link is not working properly "+Test_Result.FAILED +"</h3>");
+				
 				common.pause(2);
 			}
 			
 		}catch(Exception e){
 			
-			//common.log("<br>   Cookie Policy link is not working properly "+Test_Result.FAILED +"</h3>");
-			SeleniumInit.logStatus(ILoggerStatus.FAILED);
+				common.log("<br>   Cookie Policy link is not working properly "+Test_Result.FAILED +"</h3>");
+			
 			common.pause(2);
 			
 		}

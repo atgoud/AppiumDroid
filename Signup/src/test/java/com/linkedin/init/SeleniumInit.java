@@ -8,8 +8,6 @@ import java.util.logging.Logger;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -28,17 +26,6 @@ import com.linkedin.cases.CreateNewAccount;
 import com.linkedin.pages.CreateNewAccount_Verification;
 import com.linkedin.pages.indexpages.CreateNewAccount_IndexPage;
 
-//import com.qcbs.page.AbstractPage;
-//import com.qcbs.pages.indexpages.Tender_approve_IndexPage;
-//import com.qcbs.pages.indexpages.Tender_authorize_IndexPage;
-//import com.qcbs.pages.indexpages.Tender_bid_Indexpage;
-//import com.qcbs.pages.indexpages.Tender_closing_IndexPage;
-//import com.qcbs.pages.indexpages.Tender_committe_IndexPage;
-//import com.qcbs.pages.indexpages.Tender_creat_meeting_IndexPage;
-//import com.qcbs.pages.indexpages.Tender_creation_IndexPage;
-//import com.qcbs.pages.indexpages.Tender_open_IndexPage;
-//import com.qcbs.pages.indexpages.Tender_prepare_Indexpage;
-//import com.qcbs.pages.indexpages.Tender_reencryption_Indexpage;
 
 /**
  * Selenium class Initialization
@@ -74,21 +61,6 @@ public class SeleniumInit implements ILoggerStatus {
 	protected CreateNewAccount_IndexPage CreateNewAccount_IndexPage;
 	protected CreateNewAccount_Verification CreateNewAccount_Verification;
 	protected CreateNewAccount CreateNewAccount;
-
-	/*
-	 * protected Tender_creation_IndexPage tender_indexpage; protected
-	 * Tender_approve_IndexPage approve_indexpage; protected AbstractPage
-	 * abstractpage; protected Tender_prepare_Indexpage tpi_indexpage; protected
-	 * Tender_authorize_IndexPage authorize_indexpage; protected
-	 * Tender_bid_Indexpage bid_indexpage; protected Tender_closing_IndexPage
-	 * close_indexpage; protected Tender_reencryption_Indexpage
-	 * reencryption_indexpage; protected Tender_open_IndexPage open_IndexPage;
-	 * protected Tender_committe_IndexPage committe_IndexPage; protected
-	 * Tender_creat_meeting_IndexPage meeting_Indexpage;
-	 */
-
-	// protected RegisteredPage registeredPage;
-	// And many more ...
 
 	/**
 	 * Fetches suite-configuration from XML suite file.
@@ -143,14 +115,10 @@ public class SeleniumInit implements ILoggerStatus {
 		 * "=======================Node started====================");
 		 * Thread.sleep(2000);
 		 */
-		
 		currentTest = method.getName(); // get Name of current test.
 
 		URL remote_grid = new URL("http://" + seleniumHub + ":"
 				+ seleniumHubPort + "/wd/hub");
-
-
-		// System.out.println(remote_grid);
 
 		String SCREENSHOT_FOLDER_NAME = "screenshots";
 		String TESTDATA_FOLDER_NAME = "test_data";
@@ -162,15 +130,14 @@ public class SeleniumInit implements ILoggerStatus {
 				.getAbsolutePath();
 
 		DesiredCapabilities capability = null;
-		DesiredCapabilities capabillities = null;
 		if (targetBrowser == null || targetBrowser.contains("firefox")) {
 
 			FirefoxProfile profile = new FirefoxProfile();
 
-			// Proxy proxy = new Proxy();
-			// proxy.setNoProxy("ipms.ppadb.gov.in");
-			// proxy.setNoProxy("127.0.0.1");
-			// proxy.setNoProxy("localhost");
+			Proxy proxy = new Proxy();
+			proxy.setNoProxy("ipms.ppadb.gov.in");
+			proxy.setNoProxy("127.0.0.1");
+			proxy.setNoProxy("localhost");
 			profile.setPreference("dom.max_chrome_script_run_time", "999");
 			profile.setPreference("dom.max_script_run_time", "999");
 			profile.setPreference("browser.download.folderList", 2);
@@ -179,23 +146,17 @@ public class SeleniumInit implements ILoggerStatus {
 					false);
 			profile.setEnableNativeEvents(true);
 			profile.setPreference("network.http.use-cache", false);
-
-			/*
-			 * File file = new
-			 * File("C:/Users/Viral/Downloads/firebug-1.8.4.xpi");
-			 * 
-			 * profile.addExtension(file);
-			 * profile.setPreference("extensions.firebug.currentVersion",
-			 * "1.8.4"); // Avoid startup screen
-			 */
-
+			
+		/*	
+		   	File file = new File("C:/Users/Viral/Downloads/firebug-1.8.4.xpi");
+			  
+			   profile.addExtension(file);
+			   profile.setPreference("extensions.firebug.currentVersion", "1.8.4"); // Avoid startup screen
+			*/
+			
 			capability = DesiredCapabilities.firefox();
 			capability.setJavascriptEnabled(true);
 			capability.setCapability(FirefoxDriver.PROFILE, profile);
-			
-			
-			
-			
 
 			System.out.println("===========firefox browser===========");
 		} else if (targetBrowser.contains("ie8")) {
@@ -213,19 +174,15 @@ public class SeleniumInit implements ILoggerStatus {
 					true);
 			capability.setJavascriptEnabled(true);
 		} else if (targetBrowser.contains("chrome")) {
-			
-			ChromeOptions options = new ChromeOptions();
 
-			System.setProperty("webdriver.chrome.driver",
-					"I:\\Work\\chromedriver.exe");
-			// driver = new ChromeDriver();
 			capability = DesiredCapabilities.chrome();
+			System.setProperty("webdriver.chrome.driver",
+					"C:\\chromedriver.exe");
+			// driver = new RemoteWebDriver(new
+			// URL("http://localhost:4444/wd/hub"), capability);
 			capability.setBrowserName("chrome");
 			capability.setJavascriptEnabled(true);
-			capability.setCapability(ChromeOptions.CAPABILITY, options);
-			
 
-			System.out.println("===========chrome browser===========");
 		} else if (targetBrowser.contains("ie9")) {
 			capability = DesiredCapabilities.internetExplorer();
 			capability.setBrowserName("internet explorer");
@@ -252,7 +209,6 @@ public class SeleniumInit implements ILoggerStatus {
 			this.driver = new SafariDriver(capability);
 		}else if (targetBrowser.contains("saucelab")) {
 			   
-			   System.out.println("hi");
 			   FirefoxProfile profile = new FirefoxProfile();
 
 			   //Proxy proxy = new Proxy();
@@ -270,53 +226,30 @@ public class SeleniumInit implements ILoggerStatus {
 			/*
 			   profile.setProxyPreferences(proxy);
 			   
-			   
-			   
-			   
 			*/
-			  /* 
-			      File file = new File("C:/Users/Viral/Downloads/firebug-1.8.4.xpi");
-			     
-			      profile.addExtension(file);
-			      profile.setPreference("extensions.firebug.currentVersion", "1.8.4"); // Avoid startup screen
-			   */
-			   
-
-
-		        capabillities = DesiredCapabilities.firefox();
-		        capabillities.setCapability("version", "31");
-		        capabillities.setCapability("platform", Platform.WIN8);
+		        capability = DesiredCapabilities.firefox();
+		        capability.setCapability("version", "31");
+		        capability.setCapability("platform", Platform.WIN8);
 		        
 			  }
 		
 	
 		
-	//	"http://rahul_0502:19e76ba8-d434-4d72-9bc7-823598cf6869@ondemand.saucelabs.com:80/wd/hub"
+	//Saucelab URL: 	"http://rahul_0502:9639b07a-02f3-43cb-821a-d340d05f9fa2@ondemand.saucelabs.com:80/wd/hub"
 			
 		driver = new RemoteWebDriver(
                 new URL("http://rahul_0502:9639b07a-02f3-43cb-821a-d340d05f9fa2@ondemand.saucelabs.com:80/wd/hub"),
-                capabillities);
+                capability);
 			//driver = new RemoteWebDriver(remote_grid,capability);
-		
-		
-
-		// driver = new ChromeDriver(capability);
-
-		//System.out.println("browser");
 
 		driver.get(testUrl);
 		driver.manage().window().maximize();
-		//System.out.println("Start");
+		
 
 		// CreateNewAccount = new CreateNewAccount(driver);
 		CreateNewAccount_IndexPage = new CreateNewAccount_IndexPage(driver);
 		CreateNewAccount_Verification = new CreateNewAccount_Verification(
 				driver);
-		// login_indexpage = new Login_IndexPage(driver);
-		// login_indexpage = new Login_IndexPage(driver);
-		//
-		// login_indexpage = new Login_IndexPage(driver);
-		//
 
 	}
 
@@ -349,7 +282,7 @@ public class SeleniumInit implements ILoggerStatus {
 				common.makeScreenshot(driver, screenshotName);
 
 			} else {
-				System.out.println("TEST PASSED - " + testName + "\n"); // Print
+				//System.out.println("TEST PASSED - " + testName + "\n"); // Print
 																		// test
 																		// result
 																		// to
