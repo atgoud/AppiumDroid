@@ -17,17 +17,6 @@
   <parameter name="selenium.browser" value="saucelab" />
  <parameter name="selenium.url" value="http://www.linkedin.com" />
 
-	<test name="Create_New_Account">
-		<classes>
-			<class
-				name="com.linkedin.cases.CreateNewAccount">
-				<methods>
-					<include name="createNewAccount_case" />
-				</methods>
-			</class>
-		</classes>
-	</test>
-	
 	<test name="Verify_Register_Page">    
 		<classes>
 			<class
