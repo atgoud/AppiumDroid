@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite]">
+  <parameter name="selenium.url" value="http://www.linkedin.com"/>
+  <parameter name="selenium.browser" value="firefox"/>
+  <parameter name="selenium.port" value="4444"/>
+  <parameter name="selenium.host" value="localhost"/>
+  <test name="Verify_Register_Page(failed)">
+    <classes>
+      <class name="com.linkedin.cases.CreateNewAccount">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verify_register_page"/>
+          <include name="fetchSuiteConfiguration"/>
+        </methods>
+      </class> <!-- com.linkedin.cases.CreateNewAccount -->
+    </classes>
+  </test> <!-- Verify_Register_Page(failed) -->
+</suite> <!-- Failed suite [suite] -->

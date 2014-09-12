@@ -2,20 +2,20 @@
 <suite name="suite" verbose="1" parallel="false">
 	
 	<!-- Put IP of localhost/Grid Hub machine -->
-<!-- 	<parameter name="selenium.host" value="localhost" /> -->
+	<parameter name="selenium.host" value="localhost" />
 	
-	<!-- Put Port of localhost RC/Grid Hub machine -->
-<!-- 	<parameter name="selenium.port" value="4444" /> -->
+<!-- 	Put Port of localhost RC/Grid Hub machine -->
+ 	<parameter name="selenium.port" value="4444" /> 
 
-<!-- 	<parameter name="selenium.browser" value="firefox" />  -->
-<!-- 	<parameter name="selenium.url" value="http://www.linkedin.com" /> -->
+	<parameter name="selenium.browser" value="firefox" /> 
+	<parameter name="selenium.url" value="http://www.linkedin.com" />
 	
-	   <parameter name="selenium.host" value="rahul_0502:9639b07a-02f3-43cb-821a-d340d05f9fa2@ondemand.saucelabs.com" />
+<!-- 	   <parameter name="selenium.host" value="rahul_0502:9639b07a-02f3-43cb-821a-d340d05f9fa2@ondemand.saucelabs.com" /> -->
 
- 	<parameter name="selenium.port" value="80" /> 
+<!--  	<parameter name="selenium.port" value="80" />  -->
 
-  <parameter name="selenium.browser" value="saucelab" />
- <parameter name="selenium.url" value="http://www.linkedin.com" />
+<!--   <parameter name="selenium.browser" value="firefox" /> -->
+<!--  <parameter name="selenium.url" value="http://www.linkedin.com" /> -->
 
 	<test name="Verify_Register_Page">    
 		<classes>
@@ -40,49 +40,49 @@
 		</classes>
 	</test>
 	
-	<test name="Verify_Mendatory_Fields">
-		<classes>
-			<class
-				name="com.linkedin.cases.CreateNewAccount">
-				<methods>
-					<include name="verify_mendatory_fields" />
-				</methods>
-			</class>
-		</classes>
-	</test>
+<!-- 	<test name="Verify_Mendatory_Fields"> -->
+<!-- 		<classes> -->
+<!-- 			<class -->
+<!-- 				name="com.linkedin.cases.CreateNewAccount"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="verify_mendatory_fields" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 	
-	<test name="Verify_Button_Functionality">
-		<classes>
-			<class
-				name="com.linkedin.cases.CreateNewAccount">
-				<methods>
-					<include name="verify_joinnow_button" />
-				</methods>
-			</class>
-		</classes>
-	</test>
+<!-- 	<test name="Verify_Button_Functionality"> -->
+<!-- 		<classes> -->
+<!-- 			<class -->
+<!-- 				name="com.linkedin.cases.CreateNewAccount"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="verify_joinnow_button" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 	
-	<test name="Click_Button_Functionality">
-		<classes>
-			<class
-				name="com.linkedin.cases.CreateNewAccount">
-				<methods>
-					<include name="click_joinnow_button" />
-				</methods>
-			</class>
-		</classes>
-	</test>
+<!-- 	<test name="Click_Button_Functionality"> -->
+<!-- 		<classes> -->
+<!-- 			<class -->
+<!-- 				name="com.linkedin.cases.CreateNewAccount"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="click_joinnow_button" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 	
-	<test name="Textbox_Edit_Functionality">
-		<classes>
-			<class
-				name="com.linkedin.cases.CreateNewAccount">
-				<methods>
-					<include name="textbox_edit" />
-				</methods>
-			</class>
-		</classes>
-	</test>
+<!-- 	<test name="Textbox_Edit_Functionality"> -->
+<!-- 		<classes> -->
+<!-- 			<class -->
+<!-- 				name="com.linkedin.cases.CreateNewAccount"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="textbox_edit" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 	
 <!-- 	<test name="Invalid_FirstName"> -->
 <!-- 		<classes> -->

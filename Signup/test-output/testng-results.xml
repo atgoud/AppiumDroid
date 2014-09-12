@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[<h4><strong><em>----- TESTCASE_001 : To verify that user see Register Page. -----</em></strong></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h3> Step 1 : Open URL (http://www.linkedin.com) </h3><br>]]>
+    </line>
+    <line>
+      <![CDATA[Opening URL <br>]]>
+    </line>
+    <line>
+      <![CDATA[Page open succesfully]]>
+    </line>
+    <line>
+      <![CDATA[<h3>  Step 2 : Verify Registration Page  </h3><br>]]>
+    </line>
+    <line>
+      <![CDATA[<h3> Register page open successfully <p style=color:green><strong><em>PASSED</p></h3>]]>
+    </line>
+    <line>
+      <![CDATA[Case successfully PASSED <hr>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><strong><em>----- TESTCASE_002 : To verify that all labels are visible properly. -----</em></strong></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br>]]>
+    </line>
+    <line>
+      <![CDATA[Opening URL <br>]]>
+    </line>
+    <line>
+      <![CDATA[Page open succesfully]]>
+    </line>
+    <line>
+      <![CDATA[<h3>  Step 2 : Verify All labels of page  </h3><br>]]>
+    </line>
+    <line>
+      <![CDATA[<b>Email address <b> Label is Displayed on verify_labels_onpage <p style=color:green><strong><em>PASSED</p></h3><br> ]]>
+    </line>
+    <line>
+      <![CDATA[<b>Password <b> Label is Displayed on verify_labels_onpage <p style=color:green><strong><em>PASSED</p></h3><br> ]]>
+    </line>
+    <line>
+      <![CDATA[<b>Find a colleague: <b> Label is Displayed on verify_labels_onpage <p style=color:green><strong><em>PASSED</p></h3><br> ]]>
+    </line>
+    <line>
+      <![CDATA[Label verification done successfully <br>]]>
+    </line>
+    <line>
+      <![CDATA[Case successfully PASSED <hr>]]>
+    </line>
+  </reporter-output>
+  <suite name="suite" duration-ms="43356" started-at="2014-09-12T11:42:35Z" finished-at="2014-09-12T11:43:19Z">
+    <groups>
+    </groups>
+    <test name="Verify_Register_Page" duration-ms="23188" started-at="2014-09-12T11:42:35Z" finished-at="2014-09-12T11:42:58Z">
+      <class name="com.linkedin.cases.CreateNewAccount">
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.linkedin.cases.CreateNewAccount@4cdf7e]" name="fetchSuiteConfiguration" is-config="true" duration-ms="9" started-at="2014-09-12T17:12:35Z" finished-at="2014-09-12T17:12:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@19104e3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchSuiteConfiguration -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.linkedin.cases.CreateNewAccount@4cdf7e]" name="setUp" is-config="true" duration-ms="17737" started-at="2014-09-12T17:12:35Z" finished-at="2014-09-12T17:12:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.linkedin.cases.CreateNewAccount.verify_register_page()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verify_register_page()[pri:0, instance:com.linkedin.cases.CreateNewAccount@4cdf7e]" name="verify_register_page" duration-ms="5061" started-at="2014-09-12T17:12:53Z" finished-at="2014-09-12T17:12:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<h4><strong><em>----- TESTCASE_001 : To verify that user see Register Page. -----</em></strong></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h3> Step 1 : Open URL (http://www.linkedin.com) </h3><br>]]>
+            </line>
+            <line>
+              <![CDATA[Opening URL <br>]]>
+            </line>
+            <line>
+              <![CDATA[Page open succesfully]]>
+            </line>
+            <line>
+              <![CDATA[<h3>  Step 2 : Verify Registration Page  </h3><br>]]>
+            </line>
+            <line>
+              <![CDATA[<h3> Register page open successfully <p style=color:green><strong><em>PASSED</p></h3>]]>
+            </line>
+            <line>
+              <![CDATA[Case successfully PASSED <hr>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_register_page -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.linkedin.cases.CreateNewAccount@4cdf7e]" name="tearDown" is-config="true" duration-ms="362" started-at="2014-09-12T17:12:58Z" finished-at="2014-09-12T17:12:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_register_page status=SUCCESS method=CreateNewAccount.verify_register_page()[pri:0, instance:com.linkedin.cases.CreateNewAccount@4cdf7e] output=<h4><strong><em>----- TESTCASE_001 : To verify that user see Register Page. -----</em></strong></h4>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.linkedin.cases.CreateNewAccount -->
+    </test> <!-- Verify_Register_Page -->
+    <test name="Verify_Label_onPage" duration-ms="19894" started-at="2014-09-12T11:42:59Z" finished-at="2014-09-12T11:43:19Z">
+      <class name="com.linkedin.cases.CreateNewAccount">
+        <test-method status="PASS" signature="fetchSuiteConfiguration(org.testng.ITestContext)[pri:0, instance:com.linkedin.cases.CreateNewAccount@d7cf62]" name="fetchSuiteConfiguration" is-config="true" duration-ms="0" started-at="2014-09-12T17:12:59Z" finished-at="2014-09-12T17:12:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@12733fc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchSuiteConfiguration -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.linkedin.cases.CreateNewAccount@d7cf62]" name="setUp" is-config="true" duration-ms="13977" started-at="2014-09-12T17:12:59Z" finished-at="2014-09-12T17:13:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.linkedin.cases.CreateNewAccount.verify_labels_onpage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verify_labels_onpage()[pri:0, instance:com.linkedin.cases.CreateNewAccount@d7cf62]" name="verify_labels_onpage" duration-ms="5557" started-at="2014-09-12T17:13:13Z" finished-at="2014-09-12T17:13:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<h4><strong><em>----- TESTCASE_002 : To verify that all labels are visible properly. -----</em></strong></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h3>  Step 1 : Open URL (http://www.linkedin.com)  </h3><br>]]>
+            </line>
+            <line>
+              <![CDATA[Opening URL <br>]]>
+            </line>
+            <line>
+              <![CDATA[Page open succesfully]]>
+            </line>
+            <line>
+              <![CDATA[<h3>  Step 2 : Verify All labels of page  </h3><br>]]>
+            </line>
+            <line>
+              <![CDATA[<b>Email address <b> Label is Displayed on verify_labels_onpage <p style=color:green><strong><em>PASSED</p></h3><br> ]]>
+            </line>
+            <line>
+              <![CDATA[<b>Password <b> Label is Displayed on verify_labels_onpage <p style=color:green><strong><em>PASSED</p></h3><br> ]]>
+            </line>
+            <line>
+              <![CDATA[<b>Find a colleague: <b> Label is Displayed on verify_labels_onpage <p style=color:green><strong><em>PASSED</p></h3><br> ]]>
+            </line>
+            <line>
+              <![CDATA[Label verification done successfully <br>]]>
+            </line>
+            <line>
+              <![CDATA[Case successfully PASSED <hr>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verify_labels_onpage -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.linkedin.cases.CreateNewAccount@d7cf62]" name="tearDown" is-config="true" duration-ms="357" started-at="2014-09-12T17:13:18Z" finished-at="2014-09-12T17:13:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_labels_onpage status=SUCCESS method=CreateNewAccount.verify_labels_onpage()[pri:0, instance:com.linkedin.cases.CreateNewAccount@d7cf62] output=<h4><strong><em>----- TESTCASE_002 : To verify that all labels are visible properly. -----</em></strong></h4>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.linkedin.cases.CreateNewAccount -->
+    </test> <!-- Verify_Label_onPage -->
+  </suite> <!-- suite -->
+</testng-results>

@@ -1,8 +1,11 @@
 package com.linkedin.init;
 
-import java.io.File;import java.io.IOException;
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.logging.Logger;
 
 import org.openqa.selenium.Platform;
@@ -20,6 +23,7 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import com.linkedin.cases.CreateNewAccount;
@@ -67,8 +71,13 @@ public class SeleniumInit implements ILoggerStatus {
 	 * 
 	 * @param testContext
 	 */
+	
+
+	
 	@BeforeTest(alwaysRun = true)
 	public void fetchSuiteConfiguration(ITestContext testContext) {
+		
+
 
 		System.out
 				.println("--------------------------in fetch config--------------------------");
@@ -85,8 +94,12 @@ public class SeleniumInit implements ILoggerStatus {
 
 		targetBrowser = testContext.getCurrentXmlTest().getParameter(
 				"selenium.browser");
+		
+		
+			
 
 	}
+	
 
 	// new code====
 
@@ -117,6 +130,10 @@ public class SeleniumInit implements ILoggerStatus {
 		 */
 		currentTest = method.getName(); // get Name of current test.
 
+		
+		
+		 
+		 
 		URL remote_grid = new URL("http://" + seleniumHub + ":"
 				+ seleniumHubPort + "/wd/hub");
 
@@ -134,16 +151,16 @@ public class SeleniumInit implements ILoggerStatus {
 
 			FirefoxProfile profile = new FirefoxProfile();
 
-			Proxy proxy = new Proxy();
-			proxy.setNoProxy("ipms.ppadb.gov.in");
-			proxy.setNoProxy("127.0.0.1");
-			proxy.setNoProxy("localhost");
-			profile.setPreference("dom.max_chrome_script_run_time", "999");
-			profile.setPreference("dom.max_script_run_time", "999");
-			profile.setPreference("browser.download.folderList", 2);
-			profile.setPreference("browser.download.useDownloadDir", true);
-			profile.setPreference("browser.download.manager.showWhenStarting",
-					false);
+//			Proxy proxy = new Proxy();
+//			proxy.setNoProxy("ipms.ppadb.gov.in");
+//			proxy.setNoProxy("127.0.0.1");
+//			proxy.setNoProxy("localhost");
+//			profile.setPreference("dom.max_chrome_script_run_time", "999");
+//			profile.setPreference("dom.max_script_run_time", "999");
+//			profile.setPreference("browser.download.folderList", 2);
+//			profile.setPreference("browser.download.useDownloadDir", true);
+//			profile.setPreference("browser.download.manager.showWhenStarting",
+//					false);
 			profile.setEnableNativeEvents(true);
 			profile.setPreference("network.http.use-cache", false);
 			
@@ -232,15 +249,18 @@ public class SeleniumInit implements ILoggerStatus {
 		        capability.setCapability("platform", Platform.WIN8);
 		        
 			  }
+
+
+		
 		
 	
 		
 	//Saucelab URL: 	"http://rahul_0502:9639b07a-02f3-43cb-821a-d340d05f9fa2@ondemand.saucelabs.com:80/wd/hub"
 			
-		driver = new RemoteWebDriver(
-                new URL("http://rahul_0502:9639b07a-02f3-43cb-821a-d340d05f9fa2@ondemand.saucelabs.com:80/wd/hub"),
-                capability);
-			//driver = new RemoteWebDriver(remote_grid,capability);
+		//driver = new RemoteWebDriver(
+        //        new URL("http://rahul_0502:9639b07a-02f3-43cb-821a-d340d05f9fa2@ondemand.saucelabs.com:80/wd/hub"),
+         //       capability);
+			driver = new RemoteWebDriver(remote_grid,capability);
 
 		driver.get(testUrl);
 		driver.manage().window().maximize();
@@ -263,6 +283,7 @@ public class SeleniumInit implements ILoggerStatus {
 		try {
 
 			String testName = testResult.getName();
+			
 
 			if (!testResult.isSuccess()) {
 
@@ -282,7 +303,7 @@ public class SeleniumInit implements ILoggerStatus {
 				common.makeScreenshot(driver, screenshotName);
 
 			} else {
-				//System.out.println("TEST PASSED - " + testName + "\n"); // Print
+				System.out.println("TEST PASSED - " + testName + "\n"); // Print
 																		// test
 																		// result
 																		// to
