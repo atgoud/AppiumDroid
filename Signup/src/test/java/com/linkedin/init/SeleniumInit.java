@@ -225,6 +225,8 @@ public class SeleniumInit implements ILoggerStatus {
 			// profile);
 			this.driver = new SafariDriver(capability);
 		}else if (targetBrowser.contains("saucelab")) {
+			
+			System.out.println("===========sauceLab browser===========");
 			   
 			   FirefoxProfile profile = new FirefoxProfile();
 
