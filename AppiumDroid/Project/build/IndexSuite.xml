@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="suite" verbose="10" parallel="false">
+
+<!-- Put Platform Name  -->
+	<parameter name="platform.Name" value="Android" />
+	
+<!-- 	Put Device Name -->
+ 	<parameter name="device.Name" value="Appium" /> 
+ 	
+ 	
+ 	<test name="Calculator_Test">    
+		<classes>
+			<class
+				name="com.demo.CalculatorApp">
+				<methods>
+					<include name="VerifyCalc" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+ 	<test name="Check_Add_Functionality">    
+		<classes>
+			<class
+				name="com.demo.CalculatorApp">
+				<methods>
+					<include name="AddFunctionality" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+ 	
+	
+ 	</suite>
+ 	
