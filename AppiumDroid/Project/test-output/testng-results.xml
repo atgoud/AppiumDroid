@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[<h3><strong><em>------------ TESTCASE : 1 TO VERIFY CALCULATOR OPEN SUCCESSFULLY ------------</em></strong></h3>]]>
+    </line>
+    <line>
+      <![CDATA[<h3><em> Step 1: Open Calculator</em> </h3>]]>
+    </line>
+    <line>
+      <![CDATA[<h3><em> Step 2: Verify all buttons of calculator</em> </h3>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>1 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>2 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>3 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>4 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>5 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>6 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>7 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>8 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>9 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>0 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>÷ is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>× is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>? is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>+ is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>= is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>. is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em>13 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[Case successfully<hr><p style=color:green><strong><em>PASSED</p>]]>
+    </line>
+    <line>
+      <![CDATA[<h3><strong><em>------------ TESTCASE : 2 TO VERIFY ADDITION FUNCTIONALITY OF CALCULATOR ------------</em></strong></h3>]]>
+    </line>
+    <line>
+      <![CDATA[<h3><em> Step 1: Open Calculator</em> </h3>]]>
+    </line>
+    <line>
+      <![CDATA[<h3><em> Step 2: Enter First Value</em> </h3>]]>
+    </line>
+    <line>
+      <![CDATA[<h3><em> Step 3: Click on + Sign</em> </h3>]]>
+    </line>
+    <line>
+      <![CDATA[<h3><em> Step 4: Enter Second value</em> </h3>]]>
+    </line>
+    <line>
+      <![CDATA[<h3><em> Step 5: Click on = sign</em> </h3>]]>
+    </line>
+    <line>
+      <![CDATA[<h4><em><p style=color:green><strong><em>PASSED</p></em></h4>]]>
+    </line>
+    <line>
+      <![CDATA[Case successfully<hr><p style=color:green><strong><em>PASSED</p>]]>
+    </line>
+  </reporter-output>
+  <suite name="suite" duration-ms="184302" started-at="2014-09-17T10:26:12Z" finished-at="2014-09-17T10:29:16Z">
+    <groups>
+    </groups>
+    <test name="Calculator_Test" duration-ms="111503" started-at="2014-09-17T10:26:12Z" finished-at="2014-09-17T10:28:04Z">
+      <class name="com.demo.CalculatorApp">
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.demo.CalculatorApp@1666ada]" name="setup" is-config="true" duration-ms="47594" started-at="2014-09-17T15:56:12Z" finished-at="2014-09-17T15:57:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1565474]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyCalc()[pri:0, instance:com.demo.CalculatorApp@1666ada]" name="VerifyCalc" duration-ms="57869" started-at="2014-09-17T15:57:00Z" finished-at="2014-09-17T15:57:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<h3><strong><em>------------ TESTCASE : 1 TO VERIFY CALCULATOR OPEN SUCCESSFULLY ------------</em></strong></h3>]]>
+            </line>
+            <line>
+              <![CDATA[<h3><em> Step 1: Open Calculator</em> </h3>]]>
+            </line>
+            <line>
+              <![CDATA[<h3><em> Step 2: Verify all buttons of calculator</em> </h3>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>1 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>2 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>3 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>4 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>5 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>6 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>7 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>8 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>9 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>0 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>÷ is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>× is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>? is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>+ is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>= is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>. is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em>13 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[Case successfully<hr><p style=color:green><strong><em>PASSED</p>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- VerifyCalc -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.CalculatorApp@1666ada]" name="tearDown" is-config="true" duration-ms="5998" started-at="2014-09-17T15:57:58Z" finished-at="2014-09-17T15:58:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.CalculatorApp -->
+    </test> <!-- Calculator_Test -->
+    <test name="Check_Add_Functionality" duration-ms="72510" started-at="2014-09-17T10:28:04Z" finished-at="2014-09-17T10:29:16Z">
+      <class name="com.demo.CalculatorApp">
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.demo.CalculatorApp@dd2a4f]" name="setup" is-config="true" duration-ms="28253" started-at="2014-09-17T15:58:04Z" finished-at="2014-09-17T15:58:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1aae357]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="AddFunctionality()[pri:0, instance:com.demo.CalculatorApp@dd2a4f]" name="AddFunctionality" duration-ms="38093" started-at="2014-09-17T15:58:32Z" finished-at="2014-09-17T15:59:10Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<h3><strong><em>------------ TESTCASE : 2 TO VERIFY ADDITION FUNCTIONALITY OF CALCULATOR ------------</em></strong></h3>]]>
+            </line>
+            <line>
+              <![CDATA[<h3><em> Step 1: Open Calculator</em> </h3>]]>
+            </line>
+            <line>
+              <![CDATA[<h3><em> Step 2: Enter First Value</em> </h3>]]>
+            </line>
+            <line>
+              <![CDATA[<h3><em> Step 3: Click on + Sign</em> </h3>]]>
+            </line>
+            <line>
+              <![CDATA[<h3><em> Step 4: Enter Second value</em> </h3>]]>
+            </line>
+            <line>
+              <![CDATA[<h3><em> Step 5: Click on = sign</em> </h3>]]>
+            </line>
+            <line>
+              <![CDATA[<h4><em><p style=color:green><strong><em>PASSED</p></em></h4>]]>
+            </line>
+            <line>
+              <![CDATA[Case successfully<hr><p style=color:green><strong><em>PASSED</p>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddFunctionality -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.CalculatorApp@dd2a4f]" name="tearDown" is-config="true" duration-ms="6162" started-at="2014-09-17T15:59:10Z" finished-at="2014-09-17T15:59:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.CalculatorApp -->
+    </test> <!-- Check_Add_Functionality -->
+  </suite> <!-- suite -->
+</testng-results>

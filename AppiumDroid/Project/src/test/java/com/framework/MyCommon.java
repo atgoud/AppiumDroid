@@ -82,7 +82,9 @@ public class MyCommon extends SeleniumInit{
 	
 	public void log_case(String test_case){
 		
-		common.log("<h3><strong><em>------------ " + test_case.toUpperCase() + " ------------</em></strong></h3>");
+		common.log("---------------------------------------------------------------------------");
+		common.log("<h3><strong><em> " + test_case.toUpperCase() + " </em></strong></h3>");
+		common.log("---------------------------------------------------------------------------");
 		System.out.println("---------------------------------------------------------------------------");
 		System.out.println(test_case.toUpperCase() );
 		System.out.println("---------------------------------------------------------------------------");
@@ -98,7 +100,7 @@ public class MyCommon extends SeleniumInit{
 	
 	public void log_testover(){
 		
-		common.log("Case successfully<hr>" + Test_Result.PASSED);
+		common.log("<h4><em>Test Scenario is completed! </em></h4><hr>");
 		System.out.println("Case successfully PASSED");
 		
 		common.pause(2);
@@ -107,7 +109,7 @@ public class MyCommon extends SeleniumInit{
 	
 	public void loging(String str){
 		
-		common.log("<h4><em>" + str + "</em></h4>");
+		common.log("<h4 style=color:blue><em>Entered Data " + str + "</em></h4>");
 		System.out.println(str);
 	}
 }

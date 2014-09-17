@@ -830,4 +830,64 @@ public class Common {
 
 	 }
 	
+	/*
+	 *  pass Testcase name as parameter in method
+	 *  format --- Testcase 1 : Testcase name 
+	 *  
+	 * @param test_case
+	 */
+		
+	public void log_case(String test_case){
+		
+		log("---------------------------------------------------------------------------");
+		log("<h3><strong><em> " + test_case.toUpperCase() + " </em></strong></h3>");
+		log("---------------------------------------------------------------------------");
+		System.out.println("---------------------------------------------------------------------------");
+		System.out.println(test_case.toUpperCase() );
+		System.out.println("---------------------------------------------------------------------------");
+		
+	}
+	
+	/*
+	 *  pass Test step as parameter in method
+	 *  
+	 *  format --- Step 1 : Teststeps  
+	 *  
+	 * @param test_step
+	 */
+	
+	public void log_step(String test_step){
+		
+		log("<h3><em> " + test_step + "</em> </h3>");
+		System.out.println(test_step);
+		
+	}
+	
+	/*
+	 *  call this method after every 
+	 *  	test scenario is over
+	 *  
+	 */
+	
+	public void log_testover(){
+		
+		log("<h4><em>Test Scenario is completed! </em></h4><hr>");
+		System.out.println("Case successfully PASSED");
+		
+		pause(2);
+		
+	}
+	
+	/*
+	 *  pass entered data in String (i.e.firstname,lastname etc.)
+	 *    in this method 
+	 *  
+	 */
+	
+	public void loging(String str){
+		
+		log("<h4 style=color:cyan><em> Entered Data: " + str + "</em></h4>");
+		System.out.println(str);
+	}
+	
 }

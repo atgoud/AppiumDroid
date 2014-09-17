@@ -68,6 +68,12 @@ public class IndexPage extends AbstractPage {
 	@FindBy(className="android.widget.EditText")
 	private WebElement editText;
 	
+	@FindBy(id = "com.android.calculator2:id/clear")
+	private WebElement clearText_btn;
+	
+	@FindBy(id = "com.android.calculator2:id/del")
+	private WebElement deleteText_btn;
+	
 	
 		Common common = new Common(driver);
 		MyCommon mycommon = new MyCommon();
@@ -76,7 +82,15 @@ public class IndexPage extends AbstractPage {
 		
 		public void openCalc() {
 			
-			System.out.println("Hrererrerereeeeeeeeeeeeee");
+		//	System.out.println("Hrererrerereeeeeeeeeeeeee");
+			
+			
+			if(clearText_btn.getText().equals("CLR")){
+				clearText_btn.click();
+			}else{
+				deleteText_btn.click();
+			}
+			
 			
 			verifictionpage.verifyElement(one_btn);
 			verifictionpage.verifyElement(two_btn);
@@ -96,7 +110,7 @@ public class IndexPage extends AbstractPage {
 			verifictionpage.verifyElement(dot_btn);
 			verifictionpage.verifyElement(editText);
 			
-			System.out.println("Calc verifieeeeeeeeeddddddddddddddd!!!!!!!!!!!!!!!!!!!!");
+		//	System.out.println("Calc verifieeeeeeeeeddddddddddddddd!!!!!!!!!!!!!!!!!!!!");
 			common.pause(2);
 		}
 		
@@ -108,6 +122,10 @@ public class IndexPage extends AbstractPage {
 			int value = common.randomNumericValueGenerate(10);
 			
 			getElement(value);
+			
+			String some_value = "" + value;
+			
+			mycommon.loging(some_value);
 			
 			System.out.println("This is me..");
 			
