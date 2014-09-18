@@ -1,225 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="2" failed="0" total="2" passed="0">
   <reporter-output>
-    <line>
-      <![CDATA[<h3><strong><em>------------ TESTCASE : 1 TO VERIFY CALCULATOR OPEN SUCCESSFULLY ------------</em></strong></h3>]]>
-    </line>
-    <line>
-      <![CDATA[<h3><em> Step 1: Open Calculator</em> </h3>]]>
-    </line>
-    <line>
-      <![CDATA[<h3><em> Step 2: Verify all buttons of calculator</em> </h3>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>1 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>2 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>3 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>4 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>5 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>6 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>7 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>8 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>9 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>0 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>÷ is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>× is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>? is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>+ is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>= is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>. is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em>13 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[Case successfully<hr><p style=color:green><strong><em>PASSED</p>]]>
-    </line>
-    <line>
-      <![CDATA[<h3><strong><em>------------ TESTCASE : 2 TO VERIFY ADDITION FUNCTIONALITY OF CALCULATOR ------------</em></strong></h3>]]>
-    </line>
-    <line>
-      <![CDATA[<h3><em> Step 1: Open Calculator</em> </h3>]]>
-    </line>
-    <line>
-      <![CDATA[<h3><em> Step 2: Enter First Value</em> </h3>]]>
-    </line>
-    <line>
-      <![CDATA[<h3><em> Step 3: Click on + Sign</em> </h3>]]>
-    </line>
-    <line>
-      <![CDATA[<h3><em> Step 4: Enter Second value</em> </h3>]]>
-    </line>
-    <line>
-      <![CDATA[<h3><em> Step 5: Click on = sign</em> </h3>]]>
-    </line>
-    <line>
-      <![CDATA[<h4><em><p style=color:green><strong><em>PASSED</p></em></h4>]]>
-    </line>
-    <line>
-      <![CDATA[Case successfully<hr><p style=color:green><strong><em>PASSED</p>]]>
-    </line>
   </reporter-output>
-  <suite name="suite" duration-ms="184302" started-at="2014-09-17T10:26:12Z" finished-at="2014-09-17T10:29:16Z">
+  <suite name="suite" duration-ms="82786" started-at="2014-09-18T08:47:22Z" finished-at="2014-09-18T08:48:45Z">
     <groups>
     </groups>
-    <test name="Calculator_Test" duration-ms="111503" started-at="2014-09-17T10:26:12Z" finished-at="2014-09-17T10:28:04Z">
+    <test name="Calculator_Test" duration-ms="52103" started-at="2014-09-18T08:47:22Z" finished-at="2014-09-18T08:48:14Z">
       <class name="com.demo.CalculatorApp">
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.demo.CalculatorApp@1666ada]" name="setup" is-config="true" duration-ms="47594" started-at="2014-09-17T15:56:12Z" finished-at="2014-09-17T15:57:00Z">
+        <test-method status="FAIL" signature="setup(org.testng.ITestContext)[pri:0, instance:com.demo.CalculatorApp@1bf00a9]" name="setup" is-config="true" duration-ms="0" started-at="2014-09-18T14:17:23Z" finished-at="2014-09-18T14:17:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1565474]]>
+                <![CDATA[org.testng.TestRunner@abb9ce]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Sauce could not start your job. For more information on what happened, please visit https://saucelabs.com/jobs/b49b31dcf6e841cd9a09be5968b971c8 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 33.16 seconds
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:03'
+System info: host: 'Rahul_P', ip: '192.168.100.106', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_55'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Sauce could not start your job. For more information on what happened, please visit https://saucelabs.com/jobs/b49b31dcf6e841cd9a09be5968b971c8 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 33.16 seconds
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:03'
+System info: host: 'Rahul_P', ip: '192.168.100.106', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_55'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
+	at com.framework.SeleniumInit.setup(SeleniumInit.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="VerifyCalc()[pri:0, instance:com.demo.CalculatorApp@1666ada]" name="VerifyCalc" duration-ms="57869" started-at="2014-09-17T15:57:00Z" finished-at="2014-09-17T15:57:58Z">
+        <test-method status="SKIP" signature="VerifyCalc()[pri:0, instance:com.demo.CalculatorApp@1bf00a9]" name="VerifyCalc" duration-ms="0" started-at="2014-09-18T14:18:14Z" finished-at="2014-09-18T14:18:14Z">
           <reporter-output>
-            <line>
-              <![CDATA[<h3><strong><em>------------ TESTCASE : 1 TO VERIFY CALCULATOR OPEN SUCCESSFULLY ------------</em></strong></h3>]]>
-            </line>
-            <line>
-              <![CDATA[<h3><em> Step 1: Open Calculator</em> </h3>]]>
-            </line>
-            <line>
-              <![CDATA[<h3><em> Step 2: Verify all buttons of calculator</em> </h3>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>1 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>2 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>3 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>4 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>5 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>6 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>7 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>8 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>9 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>0 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>÷ is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>× is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>? is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>+ is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>= is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>. is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em>13 is successfully displayed <p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[Case successfully<hr><p style=color:green><strong><em>PASSED</p>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- VerifyCalc -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.CalculatorApp@1666ada]" name="tearDown" is-config="true" duration-ms="5998" started-at="2014-09-17T15:57:58Z" finished-at="2014-09-17T15:58:04Z">
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.demo.CalculatorApp@1bf00a9]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-09-18T14:18:14Z" finished-at="2014-09-18T14:18:14Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.framework.SeleniumInit.tearDown(SeleniumInit.java:135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.demo.CalculatorApp -->
     </test> <!-- Calculator_Test -->
-    <test name="Check_Add_Functionality" duration-ms="72510" started-at="2014-09-17T10:28:04Z" finished-at="2014-09-17T10:29:16Z">
+    <test name="Check_Add_Functionality" duration-ms="28812" started-at="2014-09-18T08:48:16Z" finished-at="2014-09-18T08:48:45Z">
       <class name="com.demo.CalculatorApp">
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.demo.CalculatorApp@dd2a4f]" name="setup" is-config="true" duration-ms="28253" started-at="2014-09-17T15:58:04Z" finished-at="2014-09-17T15:58:32Z">
+        <test-method status="FAIL" signature="setup(org.testng.ITestContext)[pri:0, instance:com.demo.CalculatorApp@15669ae]" name="setup" is-config="true" duration-ms="0" started-at="2014-09-18T14:18:16Z" finished-at="2014-09-18T14:18:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1aae357]]>
+                <![CDATA[org.testng.TestRunner@1fc1cb1]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Sauce could not start your job. For more information on what happened, please visit https://saucelabs.com/jobs/3b8160a4090b4c1db6759b5eb6740615 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28.79 seconds
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:03'
+System info: host: 'Rahul_P', ip: '192.168.100.106', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_55'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Sauce could not start your job. For more information on what happened, please visit https://saucelabs.com/jobs/3b8160a4090b4c1db6759b5eb6740615 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28.79 seconds
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:03'
+System info: host: 'Rahul_P', ip: '192.168.100.106', os.name: 'Windows 8.1', os.arch: 'x86', os.version: '6.3', java.version: '1.7.0_55'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:153)
+	at com.framework.SeleniumInit.setup(SeleniumInit.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AddFunctionality()[pri:0, instance:com.demo.CalculatorApp@dd2a4f]" name="AddFunctionality" duration-ms="38093" started-at="2014-09-17T15:58:32Z" finished-at="2014-09-17T15:59:10Z">
+        <test-method status="SKIP" signature="AddFunctionality()[pri:0, instance:com.demo.CalculatorApp@15669ae]" name="AddFunctionality" duration-ms="1" started-at="2014-09-18T14:18:45Z" finished-at="2014-09-18T14:18:45Z">
           <reporter-output>
-            <line>
-              <![CDATA[<h3><strong><em>------------ TESTCASE : 2 TO VERIFY ADDITION FUNCTIONALITY OF CALCULATOR ------------</em></strong></h3>]]>
-            </line>
-            <line>
-              <![CDATA[<h3><em> Step 1: Open Calculator</em> </h3>]]>
-            </line>
-            <line>
-              <![CDATA[<h3><em> Step 2: Enter First Value</em> </h3>]]>
-            </line>
-            <line>
-              <![CDATA[<h3><em> Step 3: Click on + Sign</em> </h3>]]>
-            </line>
-            <line>
-              <![CDATA[<h3><em> Step 4: Enter Second value</em> </h3>]]>
-            </line>
-            <line>
-              <![CDATA[<h3><em> Step 5: Click on = sign</em> </h3>]]>
-            </line>
-            <line>
-              <![CDATA[<h4><em><p style=color:green><strong><em>PASSED</p></em></h4>]]>
-            </line>
-            <line>
-              <![CDATA[Case successfully<hr><p style=color:green><strong><em>PASSED</p>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- AddFunctionality -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.CalculatorApp@dd2a4f]" name="tearDown" is-config="true" duration-ms="6162" started-at="2014-09-17T15:59:10Z" finished-at="2014-09-17T15:59:16Z">
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.demo.CalculatorApp@15669ae]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-09-18T14:18:45Z" finished-at="2014-09-18T14:18:45Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.framework.SeleniumInit.tearDown(SeleniumInit.java:135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

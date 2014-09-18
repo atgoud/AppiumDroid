@@ -73,22 +73,43 @@ public class SeleniumInit {
 		  
 		  System.out.println("=====================  Android Starting..  =====================");
 		  
-		  capabilities.setCapability("device","Android");  //Selected Device : Android
+		/*  capabilities.setCapability("device","Android");  //Selected Device : Android
 		  capabilities.setCapability(CapabilityType.BROWSER_NAME, "Android"); //Browser Name : Empty
 		  capabilities.setCapability(CapabilityType.VERSION, "4.2.2"); // Browser Version : Android Version
 		  capabilities.setCapability(CapabilityType.PLATFORM, "WINDOWS"); // Platform : Windows
 		  capabilities.setCapability("platformName",platformName);
-		  capabilities.setCapability("deviceName", deviceName);
+		  capabilities.setCapability("deviceName", deviceName);*/
 		  
+		 // capabilities.setCapability("browserName","");
+		  
+		  capabilities.setCapability("platformVersion", "4.4");
+		  capabilities.setCapability("appium-version", "1.2.0.1");
+		  capabilities.setCapability("platformName", "Android");
+		  capabilities.setCapability("deviceName", "Android Emulator");
+		  capabilities.setCapability("device-orientation", "portrait");
+		  
+		 /* # set 'browserName' to '' if automating a native app 
+		  # set 'app' capability if automating a native app*/
+		  
+	      capabilities.setCapability("app", "sauce-storage:my_app.zip");
+	      capabilities.setCapability("name", "android calculator test");
 		  //capabilities.setCapability("app", "hgs"); 
-		  capabilities.setCapability("app-package", "com.android.calculator2"); // This is package name of your app (you can get it from apk info app)
-		  capabilities.setCapability("app-activity", "com.android.calculator2.Calculator"); // This is Launcher activity of your app (you can get it from apk info app)
+		  
+		 // capabilities.setCapability("app-package", "com.android.calculator2"); // This is package name of your app (you can get it from apk info app)
+		 // capabilities.setCapability("app-activity", "com.android.calculator2.Calculator"); // This is Launcher activity of your app (you can get it from apk info app)
 		 
 		  //capabilities.setCapability("app-wait-activity","LoginActivity,NewAccountActivity");
 		  //capabilities.setCapability("app", app.getAbsolutePath()); 
 		  
-		  driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities); 
+		  //driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities); 
 		  // IP : 127.0.0.1 Port : 4723
+		  
+			/*Saucelab URL: 	"http://rahul_0502:9639b07a-02f3-43cb-821a-d340d05f9fa2@ondemand.saucelabs.com:80/wd/hub" */
+				
+			driver = new RemoteWebDriver(
+		                new URL("http://rahul_0502:9639b07a-02f3-43cb-821a-d340d05f9fa2@ondemand.saucelabs.com:80/wd/hub"),
+		               capabilities);
+
 		  
 		  driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);  
 		 
